@@ -1,0 +1,6 @@
+framework module Pods_AwesomeUIMagic_Example {
+  umbrella header "Pods-AwesomeUIMagic_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

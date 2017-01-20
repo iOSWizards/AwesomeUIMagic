@@ -17,12 +17,12 @@ AwesomeUIMagic is available through [CocoaPods](http://cocoapods.org). To instal
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "AwesomeUIMagic"
+pod "AwesomeUIMagic", git: 'https://github.com/iOSWizards/AwesomeUIMagic', tag: '0.1.0'
 ```
 
 ## Author
 
-Evandro Harrison Hoffmann, ehh85@yahoo.com.br
+Evandro Harrison Hoffmann, evandro@itsdayoff.com
 
 ## License
 

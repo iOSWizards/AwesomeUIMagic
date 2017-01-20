@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'AwesomeUIMagic'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of AwesomeUIMagic.'
+  s.summary          = 'Unlock Magic on your UI.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,14 +18,14 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+Your UI has never been so powerful.
                        DESC
 
-  s.homepage         = 'https://github.com/<GITHUB_USERNAME>/AwesomeUIMagic'
+  s.homepage         = 'https://github.com/iOSWizards/AwesomeUIMagic'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Evandro Harrison Hoffmann' => 'ehh85@yahoo.com.br' }
-  s.source           = { :git => 'https://github.com/<GITHUB_USERNAME>/AwesomeUIMagic.git', :tag => s.version.to_s }
+  s.author           = { 'Evandro Harrison Hoffmann' => 'evandro@itsdayoff.com' }
+  s.source           = { :git => 'https://github.com/iOSWizards/AwesomeUIMagic.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
