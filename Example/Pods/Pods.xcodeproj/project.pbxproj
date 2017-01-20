@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A5287F41E31BAE7006A66CB /* UIView+Awesome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5287F31E31BAE7006A66CB /* UIView+Awesome.swift */; };
 		19C7D8A4A402ADA6E1AC3A4B7560CEC0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		21765E856667AC6B7FB62911026387DD /* Pods-AwesomeUIMagic_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A36B10DB187A52AB56F8CE87A22C22B6 /* Pods-AwesomeUIMagic_Tests-dummy.m */; };
 		230A531BA46A2CE31F41DC30517C28C5 /* Pods-AwesomeUIMagic_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 637E521842E67E648764B21D9B7B9DCA /* Pods-AwesomeUIMagic_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -16,7 +17,6 @@
 		6976DE7E1089AA1DC74F7372CB86A3DD /* AwesomeUIMagic-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A7CCE07B708B26D51EC9C8B8B9C40444 /* AwesomeUIMagic-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9C18D21B2FB27CEDAF24D7979901A77E /* AwesomeUIMagic-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 77F1BA88C7207310CE4046E343772C30 /* AwesomeUIMagic-dummy.m */; };
 		C06CB711C3045376AAD58786EC78300E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		F20A6FD668919E1DCDEDD37882DE978B /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9807EE6F35E48DEEB18D93B02DC98F1 /* ReplaceMe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A5287F31E31BAE7006A66CB /* UIView+Awesome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Awesome.swift"; sourceTree = "<group>"; };
 		1878737511DE48986666E58891AE3C1D /* AwesomeUIMagic-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AwesomeUIMagic-prefix.pch"; sourceTree = "<group>"; };
 		1E79243B76637FCE67C8810007AD3F61 /* Pods-AwesomeUIMagic_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-AwesomeUIMagic_Example.modulemap"; sourceTree = "<group>"; };
 		2064E33891B1CEB7297CA89E22033859 /* Pods-AwesomeUIMagic_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AwesomeUIMagic_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -49,7 +50,6 @@
 		A3E49F98004EECAFA63492FDD4C1E474 /* Pods-AwesomeUIMagic_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AwesomeUIMagic_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		A52C67FF5045121CCCBAA7348D3F1F46 /* Pods-AwesomeUIMagic_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AwesomeUIMagic_Example-frameworks.sh"; sourceTree = "<group>"; };
 		A7CCE07B708B26D51EC9C8B8B9C40444 /* AwesomeUIMagic-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AwesomeUIMagic-umbrella.h"; sourceTree = "<group>"; };
-		A9807EE6F35E48DEEB18D93B02DC98F1 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
 		AA7E738629154C755B38F6C56746C328 /* Pods-AwesomeUIMagic_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AwesomeUIMagic_Example-dummy.m"; sourceTree = "<group>"; };
 		AADC439FB3D5F5A88656FB9BFDB95DCB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AECD7AF39DD6A84DF67EFF948F6F1384 /* AwesomeUIMagic.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AwesomeUIMagic.xcconfig; sourceTree = "<group>"; };
@@ -164,7 +164,7 @@
 		AC1AE2DE9794A90012E3E34F16B410D8 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				A9807EE6F35E48DEEB18D93B02DC98F1 /* ReplaceMe.swift */,
+				0A5287F31E31BAE7006A66CB /* UIView+Awesome.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -356,8 +356,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A5287F41E31BAE7006A66CB /* UIView+Awesome.swift in Sources */,
 				9C18D21B2FB27CEDAF24D7979901A77E /* AwesomeUIMagic-dummy.m in Sources */,
-				F20A6FD668919E1DCDEDD37882DE978B /* ReplaceMe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,6 +385,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AECD7AF39DD6A84DF67EFF948F6F1384 /* AwesomeUIMagic.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -417,6 +418,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AECD7AF39DD6A84DF67EFF948F6F1384 /* AwesomeUIMagic.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
