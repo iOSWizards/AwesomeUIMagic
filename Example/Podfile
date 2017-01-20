@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'AwesomeUIMagic_Example' do
+  pod 'AwesomeUIMagic', :path => '../'
+
+  target 'AwesomeUIMagic_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
