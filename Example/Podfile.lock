@@ -1,5 +1,5 @@
 PODS:
-  - AwesomeUIMagic (0.1.0)
+  - AwesomeUIMagic (0.2.0)
 
 DEPENDENCIES:
   - AwesomeUIMagic (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  AwesomeUIMagic: b3e4d494ada4390422f2f4203133915abe762210
+  AwesomeUIMagic: eb05b95f10b74e8267d3e6f8de5b6794b08c17f6
 
 PODFILE CHECKSUM: 671e812355ecdac45b30e01407f3d7d3dcd26753
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.2.0
