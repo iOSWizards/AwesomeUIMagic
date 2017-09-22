@@ -94,13 +94,19 @@ open class DesignableButton: UIButton {
     
     @IBInspectable open var gradientTopColor: UIColor = UIColor.clear {
         didSet{
-            self.addGradientLayer(gradientTopColor, bottomColor: gradientBottomColor)
+            self.addGradientLayer(gradientTopColor, middle: gradientMiddleColor, bottomColor: gradientBottomColor)
+        }
+    }
+    
+    @IBInspectable open var gradientMiddleColor: UIColor = UIColor.clear {
+        didSet{
+            self.addGradientLayer(gradientTopColor, middle: gradientMiddleColor, bottomColor: gradientBottomColor)
         }
     }
     
     @IBInspectable open var gradientBottomColor: UIColor = UIColor.clear {
         didSet{
-            self.addGradientLayer(gradientTopColor, bottomColor: gradientBottomColor)
+            self.addGradientLayer(gradientTopColor, middle: gradientMiddleColor, bottomColor: gradientBottomColor)
         }
     }
     
@@ -141,7 +147,7 @@ open class DesignableButton: UIButton {
     open override func layoutSubviews() {
         super.layoutSubviews()
         
-        addGradientLayer(gradientTopColor, bottomColor: gradientBottomColor)
+        addGradientLayer(gradientTopColor, middle: gradientMiddleColor, bottomColor: gradientBottomColor)
         
         if !arrayCorners.isEmpty {
             let maskPath = UIBezierPath(roundedRect: self.bounds, byRoundingCorners: arrayCorners, cornerRadii: CGSize(width: singleCornersRadius, height: singleCornersRadius))
@@ -184,4 +190,3 @@ open class DesignableButton: UIButton {
     }
     
 }
-

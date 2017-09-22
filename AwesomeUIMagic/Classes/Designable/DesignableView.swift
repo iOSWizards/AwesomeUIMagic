@@ -68,13 +68,19 @@ open class DesignableView: UIView, ShimmerEffect {
     
     @IBInspectable open var gradientTopColor: UIColor = UIColor.clear {
         didSet{
-            self.addGradientLayer(gradientTopColor, bottomColor: gradientBottomColor)
+            self.addGradientLayer(gradientTopColor, middle: gradientMiddleColor, bottomColor: gradientBottomColor)
+        }
+    }
+    
+    @IBInspectable open var gradientMiddleColor: UIColor = UIColor.clear {
+        didSet{
+            self.addGradientLayer(gradientTopColor, middle: gradientMiddleColor, bottomColor: gradientBottomColor)
         }
     }
     
     @IBInspectable open var gradientBottomColor: UIColor = UIColor.clear {
         didSet{
-            self.addGradientLayer(gradientTopColor, bottomColor: gradientBottomColor)
+            self.addGradientLayer(gradientTopColor, middle: gradientMiddleColor, bottomColor: gradientBottomColor)
         }
     }
     
@@ -145,7 +151,7 @@ open class DesignableView: UIView, ShimmerEffect {
     open override func layoutSubviews() {
         super.layoutSubviews()
         
-        addGradientLayer(gradientTopColor, bottomColor: gradientBottomColor)
+        addGradientLayer(gradientTopColor, middle: gradientMiddleColor, bottomColor: gradientBottomColor)
         updateShape(shapeType)
         
         if(self.shadowRadius > 0) {
@@ -242,4 +248,3 @@ extension ShimmerEffect {
     }
     
 }
-
