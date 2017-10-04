@@ -19,7 +19,7 @@ open class DesignableLabel: UILabel {
             let paragraphStyle = NSMutableParagraphStyle()
             paragraphStyle.lineSpacing = lineHeight - self.font.pointSize
             paragraphStyle.alignment = self.textAlignment
-            attributedString.addAttribute("NSParagraphStyleAttributeName", value: paragraphStyle, range: NSMakeRange(0, self.text!.characters.count))
+            attributedString.addAttribute(NSAttributedStringKey(rawValue: "NSParagraphStyleAttributeName"), value: paragraphStyle, range: NSMakeRange(0, self.text!.characters.count))
             self.attributedText = attributedString
         }
     }
