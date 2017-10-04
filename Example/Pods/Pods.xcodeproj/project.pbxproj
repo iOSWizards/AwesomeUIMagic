@@ -47,11 +47,11 @@
 		006B96BCFD9100B838C01A4C33FAE60C /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 		1878737511DE48986666E58891AE3C1D /* AwesomeUIMagic-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AwesomeUIMagic-prefix.pch"; sourceTree = "<group>"; };
 		1CF6759A65718152C6E77CEAEE457C50 /* DesignableTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DesignableTextView.swift; sourceTree = "<group>"; };
-		1E79243B76637FCE67C8810007AD3F61 /* Pods-AwesomeUIMagic_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-AwesomeUIMagic_Example.modulemap"; sourceTree = "<group>"; };
+		1E79243B76637FCE67C8810007AD3F61 /* Pods-AwesomeUIMagic_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-AwesomeUIMagic_Example.modulemap"; sourceTree = "<group>"; };
 		2064E33891B1CEB7297CA89E22033859 /* Pods-AwesomeUIMagic_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AwesomeUIMagic_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		21CB0396398D7C5EAACEE7E1914CF999 /* UIViewExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		23288E194C5934424A6825CEC4116C8E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		26C756B32561841277F2DA768F2DDE6E /* AwesomeUIMagic.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = AwesomeUIMagic.modulemap; sourceTree = "<group>"; };
+		26C756B32561841277F2DA768F2DDE6E /* AwesomeUIMagic.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AwesomeUIMagic.modulemap; sourceTree = "<group>"; };
 		3A95553A2C1199E1FA19631CA3B16CD0 /* DesignableProgressView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DesignableProgressView.swift; sourceTree = "<group>"; };
 		4222E0DF38CC4ED72BA7A8F8A9DF9274 /* Pods-AwesomeUIMagic_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AwesomeUIMagic_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		4240925732B6EBCAB967BF402B6996DC /* Pods-AwesomeUIMagic_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AwesomeUIMagic_Example-resources.sh"; sourceTree = "<group>"; };
@@ -64,9 +64,9 @@
 		7738DF0EDDB87A797A4F5671976DD1C0 /* DesignableImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DesignableImageView.swift; sourceTree = "<group>"; };
 		77F1BA88C7207310CE4046E343772C30 /* AwesomeUIMagic-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AwesomeUIMagic-dummy.m"; sourceTree = "<group>"; };
 		77F3F7C8533A744A5A428CFDA5DD2711 /* ParallaxHeaderView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ParallaxHeaderView.swift; sourceTree = "<group>"; };
-		84587B2D4E8D6325D03B475E85CEDAA9 /* AwesomeUIMagic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AwesomeUIMagic.framework; path = AwesomeUIMagic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84587B2D4E8D6325D03B475E85CEDAA9 /* AwesomeUIMagic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AwesomeUIMagic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D51362E65C4045FB977EDA83C749E47 /* DesignableButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		93FA037CD90BA93FDD84BC4C555A0A65 /* Pods-AwesomeUIMagic_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AwesomeUIMagic_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		97B328FFCAA1EB7727F318EC237D7B3F /* NSNumberExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NSNumberExtensions.swift; sourceTree = "<group>"; };
 		A02F34D14D17DA75368D73041652A89D /* DesignableNavigationBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DesignableNavigationBar.swift; sourceTree = "<group>"; };
@@ -84,10 +84,10 @@
 		C3DF2C65AF4252FE7D650E202A4FFF8C /* UIBezierPath+Polygon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIBezierPath+Polygon.swift"; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		CC5C82F6299BB4175CE622BB0005D7DE /* Pods-AwesomeUIMagic_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AwesomeUIMagic_Example-umbrella.h"; sourceTree = "<group>"; };
-		CF4CA09D047A788D951874BD97023C1C /* Pods-AwesomeUIMagic_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-AwesomeUIMagic_Tests.modulemap"; sourceTree = "<group>"; };
-		D4E5A05027CDA149D1C72E0E1DFC85EC /* Pods_AwesomeUIMagic_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AwesomeUIMagic_Tests.framework; path = "Pods-AwesomeUIMagic_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF4CA09D047A788D951874BD97023C1C /* Pods-AwesomeUIMagic_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-AwesomeUIMagic_Tests.modulemap"; sourceTree = "<group>"; };
+		D4E5A05027CDA149D1C72E0E1DFC85EC /* Pods_AwesomeUIMagic_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AwesomeUIMagic_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAB28176CA4EB0648BEFC7672DF6A930 /* QuestContentTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = QuestContentTextView.swift; sourceTree = "<group>"; };
-		DBC5846FB40E616FF932494B252EE24B /* Pods_AwesomeUIMagic_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AwesomeUIMagic_Example.framework; path = "Pods-AwesomeUIMagic_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBC5846FB40E616FF932494B252EE24B /* Pods_AwesomeUIMagic_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AwesomeUIMagic_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECAB244B76F76886A04DFA728A3A8BF1 /* Pods-AwesomeUIMagic_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AwesomeUIMagic_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		F3A3A0FD169633A7487BAEF5D82579D6 /* Pods-AwesomeUIMagic_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AwesomeUIMagic_Tests-resources.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -190,7 +190,6 @@
 				006B96BCFD9100B838C01A4C33FAE60C /* UIViewControllerExtensions.swift */,
 				21CB0396398D7C5EAACEE7E1914CF999 /* UIViewExtensions.swift */,
 			);
-			name = Extensions;
 			path = Extensions;
 			sourceTree = "<group>";
 		};
@@ -199,7 +198,6 @@
 			children = (
 				C64CAE34B8C0AFBC9693682DCEF7D844 /* Classes */,
 			);
-			name = AwesomeUIMagic;
 			path = AwesomeUIMagic;
 			sourceTree = "<group>";
 		};
@@ -219,7 +217,6 @@
 				CC770855C90EB52B3423CD7909AA9E2E /* Designable */,
 				A4D2D026DFBF94006E8D55F0EE781068 /* Extensions */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -253,7 +250,6 @@
 				1CF6759A65718152C6E77CEAEE457C50 /* DesignableTextView.swift */,
 				60CF3F2CD0392E9D3A8B8F2F2004A245 /* DesignableView.swift */,
 			);
-			name = Designable;
 			path = Designable;
 			sourceTree = "<group>";
 		};
@@ -374,6 +370,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					5414285C79711B258266856738031767 = {
+						LastSwiftMigration = 0900;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -471,7 +472,8 @@
 				PRODUCT_NAME = AwesomeUIMagic;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -504,7 +506,8 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
