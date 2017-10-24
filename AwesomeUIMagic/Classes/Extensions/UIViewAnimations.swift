@@ -66,9 +66,9 @@ extension UIView{
     }
     
     public func animateFadeIn(duration: Double = 0.3, alphaIn: CGFloat = 0, _ completion:(() -> Void)? = nil){
-        if !self.isHidden {
-            return
-        }
+        //        if !self.isHidden {
+        //            return
+        //        }
         
         self.isHidden = false
         self.alpha = alphaIn
@@ -192,4 +192,14 @@ extension UIView{
             //}
         })
     }
+    
+    public func animateShakeUpDown(duration: Double = 0.17) {
+        let shake = CAKeyframeAnimation(keyPath: "transform.translation.y")
+        shake.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionLinear)
+        shake.duration = 0.17
+        shake.values = [-20.0, 20.0, 0.0]
+        self.layer.add(shake, forKey: "AwesomeMagicUIShakeUpDown")
+    }
+    
 }
+

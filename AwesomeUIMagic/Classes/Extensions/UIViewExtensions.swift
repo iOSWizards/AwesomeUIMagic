@@ -12,7 +12,7 @@ extension UIView{
     
     // MARK: - Gradient
     
-    public func addGradientLayer(_ topColor: UIColor, bottomColor: UIColor){
+    public func addGradientLayer(_ topColor: UIColor, middle: UIColor, bottomColor: UIColor){
         //remove sublayers
         if let sublayers = layer.sublayers {
             for sublayer in sublayers {
@@ -24,8 +24,8 @@ extension UIView{
         
         let gradientLayer = CAGradientLayer()
         gradientLayer.frame = CGRect(x: 0, y: 0, width: frame.size.width, height: frame.size.height)
-        gradientLayer.colors = [topColor.cgColor, bottomColor.cgColor]
-        gradientLayer.locations = [0.0, 1.0]
+        gradientLayer.colors = [topColor.cgColor, middle.cgColor, bottomColor.cgColor]
+        gradientLayer.locations = [0.0, 0.5, 1.0]
         layer.insertSublayer(gradientLayer, at: 0)
     }
     
@@ -63,7 +63,7 @@ extension UIView{
         self.layer.masksToBounds = true
     }
     
-    // MARK: - Triangle 
+    // MARK: - Triangle
     
     public func addTringleView(_ rect: CGRect, fillColor: UIColor) {
         guard let context = UIGraphicsGetCurrentContext() else {
@@ -108,4 +108,3 @@ extension UIView{
         self.addSubview(blurEffectView)
     }
 }
-

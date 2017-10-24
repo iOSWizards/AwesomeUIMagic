@@ -12,6 +12,7 @@ import UIKit
 open class DesignableButton: UIButton {
     
     var shadowLayer: UIView?
+    var arrayCorners: UIRectCorner = []
     
     deinit {
         shadowLayer?.removeFromSuperview()
@@ -93,13 +94,19 @@ open class DesignableButton: UIButton {
     
     @IBInspectable open var gradientTopColor: UIColor = UIColor.clear {
         didSet{
-            self.addGradientLayer(gradientTopColor, bottomColor: gradientBottomColor)
+            self.addGradientLayer(gradientTopColor, middle: gradientMiddleColor, bottomColor: gradientBottomColor)
+        }
+    }
+    
+    @IBInspectable open var gradientMiddleColor: UIColor = UIColor.clear {
+        didSet{
+            self.addGradientLayer(gradientTopColor, middle: gradientMiddleColor, bottomColor: gradientBottomColor)
         }
     }
     
     @IBInspectable open var gradientBottomColor: UIColor = UIColor.clear {
         didSet{
-            self.addGradientLayer(gradientTopColor, bottomColor: gradientBottomColor)
+            self.addGradientLayer(gradientTopColor, middle: gradientMiddleColor, bottomColor: gradientBottomColor)
         }
     }
     
@@ -111,10 +118,53 @@ open class DesignableButton: UIButton {
     
     @IBInspectable open var shadowRadius: CGFloat = 0
     
+    @IBInspectable open var topLeftCorner: Bool = false {
+        didSet{
+            arrayCorners.insert(.topLeft)
+        }
+    }
+    
+    @IBInspectable open var topRightCorner: Bool = false {
+        didSet{
+            arrayCorners.insert(.topRight)
+        }
+    }
+    
+    @IBInspectable open var bottomLeftCorner: Bool = false {
+        didSet{
+            arrayCorners.insert(.bottomLeft)
+        }
+    }
+    
+    @IBInspectable open var bottomRightCorner: Bool = false {
+        didSet{
+            arrayCorners.insert(.bottomRight)
+        }
+    }
+    
+    @IBInspectable open var singleCornersRadius: CGFloat = 0.0
+    
     open override func layoutSubviews() {
         super.layoutSubviews()
         
-        addGradientLayer(gradientTopColor, bottomColor: gradientBottomColor)
+        addGradientLayer(gradientTopColor, middle: gradientMiddleColor, bottomColor: gradientBottomColor)
+        
+        if !arrayCorners.isEmpty {
+            let maskPath = UIBezierPath(roundedRect: self.bounds, byRoundingCorners: arrayCorners, cornerRadii: CGSize(width: singleCornersRadius, height: singleCornersRadius))
+            
+            let shape = CAShapeLayer()
+            shape.path = maskPath.cgPath
+            layer.mask = shape
+            
+            let borderLayer = CAShapeLayer()
+            borderLayer.path = shape.path
+            borderLayer.fillColor = UIColor.clear.cgColor
+            borderLayer.strokeColor = borderColor.cgColor
+            borderLayer.lineWidth = borderWidth + 1.0 // because this width is inside our layer, so it gets thinner with the default value
+            borderLayer.frame = bounds
+            layer.borderWidth = 0.0
+            layer.addSublayer(borderLayer)
+        }
         
         if(self.shadowRadius > 0) {
             if shadowLayer != nil {
@@ -138,5 +188,5 @@ open class DesignableButton: UIButton {
             
         }
     }
-
+    
 }
