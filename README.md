@@ -22,6 +22,21 @@ it, simply add the following line to your Podfile:
 pod "AwesomeUIMagic", git: 'https://github.com/iOSWizards/AwesomeUIMagic', tag: '0.2.6'
 ```
 
+## Usage
+
+After imported with CocoaPods, extend any component with class prefix `Designable`.
+A bunch of inspectable variables will be available for each type of UI component.
+
+###Here is the list of available classes:
+- DesignableButton
+- DesignableView
+- DesignableLabel
+- DesignableNavigationBar
+- DesignableProgressView
+- DesignableTextView
+- DesignableTextField
+- DesignableImageView
+
 ## License
 
 AwesomeUIMagic is available under the MIT license. See the LICENSE file for more info.
