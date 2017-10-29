@@ -27,7 +27,7 @@ pod "AwesomeUIMagic", git: 'https://github.com/iOSWizards/AwesomeUIMagic', tag: 
 After imported with CocoaPods, extend any component with class prefix `Designable`.
 A bunch of inspectable variables will be available for each type of UI component.
 
-###Here is the list of available classes:
+### Here is the list of available classes:
 - DesignableButton
 - DesignableView
 - DesignableLabel
