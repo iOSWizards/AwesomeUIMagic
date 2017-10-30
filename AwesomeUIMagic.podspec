@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AwesomeUIMagic'
-  s.version          = '0.2.7'
+  s.version          = '0.2.8'
   s.summary          = 'Unlock Magic on your UI.'
 
 # This description is used to generate tags and improve search results.
@@ -24,7 +24,7 @@ Your UI has never been so powerful.
   s.homepage         = 'https://github.com/iOSWizards/AwesomeUIMagic'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Evandro Harrison Hoffmann' => 'evandro@itsdayoff.com' }
+  s.author           = { 'Evandro Harrison Hoffmann, Leonardo Kaminski Ferreira' => 'evandro@itsdayoff.com, leonardo@mindvalley.com' }
   s.source           = { :git => 'https://github.com/iOSWizards/AwesomeUIMagic.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
