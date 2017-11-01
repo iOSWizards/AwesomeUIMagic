@@ -126,11 +126,11 @@ extension UIView {
     
     // MARK: - Snapshots
     
-    public func snapshotsFrom() -> [UIView] {
-        var snapshots: [UIView] = []
+    public func snapshotsFrom() -> [(UIView, CGPoint, CGRect)] {
+        var snapshots: [(UIView, CGPoint, CGRect)] = []
         for view in self.subviews where !view.magicID.isEmpty {
             if let snapshot = view.snapshotView(afterScreenUpdates: true) {
-                snapshots.append(snapshot)
+                snapshots.append((snapshot, view.center, view.frame))
             }
         }
         return snapshots

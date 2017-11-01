@@ -20,6 +20,8 @@
 		8C82B559792524252C2D8FFDE65AA799 /* AwesomeUIMagic-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B2F6C5BF167E9D67D07B2081EEFE21 /* AwesomeUIMagic-dummy.m */; };
 		8D5B8FAB54FB172AF7E27DDE58068D38 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		9EAF56D3ACD33D0FFCBBC86EF45673CA /* DesignableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FDC865C74F1AE50C54C1DEE87E6E7C /* DesignableImageView.swift */; };
+		A72337CA1FAA1AA4004BBF11 /* TransitionPresentationAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72337C81FAA1AA3004BBF11 /* TransitionPresentationAnimator.swift */; };
+		A72337CB1FAA1AA4004BBF11 /* TransitionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72337C91FAA1AA3004BBF11 /* TransitionDelegate.swift */; };
 		A7BB36061FA9C1A60085D3C2 /* ObjectAssociation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BB36051FA9C1A60085D3C2 /* ObjectAssociation.swift */; };
 		CCB930AA256F43DA231627E13C392049 /* ParallaxHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617365E5EA4AB40CC2EF2EDDED2BD1BE /* ParallaxHeaderView.swift */; };
 		D11E4381490E1071452A56B8469F04A6 /* DesignableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3937C8EFF61633622B7F429DE81F73 /* DesignableLabel.swift */; };
@@ -67,6 +69,8 @@
 		8325C517A8DE47D126E6C1FB2C3E8CB7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		93E0B83712B3FE6940FE373F361D7FB5 /* NSNumberExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSNumberExtensions.swift; path = AwesomeUIMagic/Classes/Extensions/NSNumberExtensions.swift; sourceTree = "<group>"; };
+		A72337C81FAA1AA3004BBF11 /* TransitionPresentationAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionPresentationAnimator.swift; sourceTree = "<group>"; };
+		A72337C91FAA1AA3004BBF11 /* TransitionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionDelegate.swift; sourceTree = "<group>"; };
 		A7BB36051FA9C1A60085D3C2 /* ObjectAssociation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectAssociation.swift; sourceTree = "<group>"; };
 		B56E324BD52D6B2C01660DAAFD5EFE84 /* Pods-AwesomeUIMagic_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AwesomeUIMagic_Example-resources.sh"; sourceTree = "<group>"; };
 		B572B5EA0388AEBBA8CCA67723197184 /* Pods-AwesomeUIMagic_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AwesomeUIMagic_Example-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -179,6 +183,8 @@
 				7134322D2DCB72F5C497572CF9B7BAB1 /* UIViewControllerExtensions.swift */,
 				623B74C35A4FCDC65F1BA3E1B327B32F /* UIViewExtensions.swift */,
 				A7BB36051FA9C1A60085D3C2 /* ObjectAssociation.swift */,
+				A72337C91FAA1AA3004BBF11 /* TransitionDelegate.swift */,
+				A72337C81FAA1AA3004BBF11 /* TransitionPresentationAnimator.swift */,
 				2F1BA399AA64FCE31C9A2F292C81C8EF /* Support Files */,
 			);
 			path = AwesomeUIMagic;
@@ -314,6 +320,8 @@
 				6808850EF80AC7095556569592ABA125 /* DesignableTextField.swift in Sources */,
 				453925AC57BAD7607392A42731575BF5 /* DesignableTextView.swift in Sources */,
 				3BCB9F2C7C29D89E3A83D2E6DC644C17 /* DesignableView.swift in Sources */,
+				A72337CB1FAA1AA4004BBF11 /* TransitionDelegate.swift in Sources */,
+				A72337CA1FAA1AA4004BBF11 /* TransitionPresentationAnimator.swift in Sources */,
 				F5B36789697ECA80F398EF553A77BB47 /* NSNumberExtensions.swift in Sources */,
 				CCB930AA256F43DA231627E13C392049 /* ParallaxHeaderView.swift in Sources */,
 				D21493D9AB8017ADC3D5AB316523DA1F /* QuestContentTextView.swift in Sources */,
