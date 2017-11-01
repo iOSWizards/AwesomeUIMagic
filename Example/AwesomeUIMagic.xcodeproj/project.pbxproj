@@ -13,6 +13,7 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		A72337C11FA9DB86004BBF11 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72337C01FA9DB86004BBF11 /* DetailViewController.swift */; };
 		D35DC4185F4BFCC1E766FBC3 /* Pods_AwesomeUIMagic_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20CC54958D1EC38F6646CE76 /* Pods_AwesomeUIMagic_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +43,7 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		829C21FF9B2C39327DC95FBA /* AwesomeUIMagic.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = AwesomeUIMagic.podspec; path = ../AwesomeUIMagic.podspec; sourceTree = "<group>"; };
 		9C275486DC10BB9703710759 /* Pods-AwesomeUIMagic_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeUIMagic_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AwesomeUIMagic_Example/Pods-AwesomeUIMagic_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		A72337C01FA9DB86004BBF11 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		E2B3277C915D9B11E38A46D1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		E36FF5F18FF028EB0E0D7739 /* Pods-AwesomeUIMagic_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeUIMagic_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-AwesomeUIMagic_Example/Pods-AwesomeUIMagic_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -104,6 +106,7 @@
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				A72337C01FA9DB86004BBF11 /* DetailViewController.swift */,
 			);
 			name = "Example for AwesomeUIMagic";
 			path = AwesomeUIMagic;
@@ -315,6 +318,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A72337C11FA9DB86004BBF11 /* DetailViewController.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
