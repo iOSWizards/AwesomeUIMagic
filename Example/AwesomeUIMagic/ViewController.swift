@@ -7,14 +7,27 @@
 //
 
 import UIKit
+import AwesomeUIMagic
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        let snapshots = view.snapshotsFrom()
+        print("snapshots array: \(snapshots)")
+        
+        let redView = snapshots.first!
+        redView.frame = CGRect(x: 100.0, y: 100.0, width: redView.frame.width, height: redView.frame.height)
+        print(redView.frame)
+        view.addSubview(redView)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
