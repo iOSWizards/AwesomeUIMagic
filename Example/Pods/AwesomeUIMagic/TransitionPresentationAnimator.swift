@@ -23,11 +23,12 @@ class TransitionPresentationAnimator: NSObject, UIViewControllerAnimatedTransiti
         
         for snapshot in fromViewController.view.snapshotsFrom() {
             let snapshotView = snapshot.0
+            let newSnapshotView = toViewController.view.snapshotsFrom().first(where: { $0.0.magicID == snapshotView.magicID })
             
             let oldFrame = snapshot.2
-            let newFrame = toViewController.view.snapshotsFrom().first(where: { $0.0.magicID == snapshotView.magicID })?.2
+            let newFrame = newSnapshotView?.2
             snapshotView.transform = CGAffineTransform.identity
-            snapshotView.center = snapshot.1
+            snapshotView.center = newSnapshotView?.1 ?? CGPoint(x: 0, y: 0)
             containerView.addSubview(snapshotView)
             containerView.backgroundColor = fromViewController.view.backgroundColor
             
