@@ -37,17 +37,17 @@ class TransitionPresentationAnimator: NSObject, UIViewControllerAnimatedTransiti
             containerView.addSubview(toViewController.view)
             hiddenNecessaryViews(true, snapshotView: snapshotView, fromViewController: fromViewController, toViewController: toViewController)
             
-            UIView.animate(withDuration: animationDuration, delay: 0.0, usingSpringWithDamping: 0.9, initialSpringVelocity: 0.5, options: [.curveEaseInOut],
+            UIView.animate(withDuration: animationDuration, delay: 0.0, options: [.curveEaseInOut],
                            animations: { () -> Void in
                             snapshotView.transform = CGAffineTransform(scaleX: (newFrame?.width ?? 0)/oldFrame.width, y: (newFrame?.height ?? 0)/oldFrame.height)
                             snapshotView.center = newSnapshotView?.1 ?? CGPoint(x: 0, y: 0)
             }, completion: { (finished) -> Void in
-                snapshotView.removeFromSuperview()
                 UIView.transition(with: toViewController.view, duration: 0.5, options: [.curveEaseInOut], animations: {
+                    snapshotView.removeFromSuperview()
                     self.hiddenNecessaryViews(false, snapshotView: snapshotView, fromViewController: fromViewController, toViewController: toViewController)
                     toViewController.view.isHidden = false
-                }, completion: { (ssuceees) in
-                    transitionContext.completeTransition(finished)
+                }, completion: { (success) in
+                    transitionContext.completeTransition(success)
                 })
             })
         }

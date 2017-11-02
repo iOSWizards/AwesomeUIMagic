@@ -15,7 +15,8 @@ public class TransitionDelegate: NSObject, UIViewControllerTransitioningDelegate
         return presentationAnimator
     }
     
-//    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-//        
-//    }
+    public func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        let dismissalAnimator = TransitionPresentationAnimator()
+        return dismissalAnimator
+    }
 }
