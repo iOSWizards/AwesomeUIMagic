@@ -28,7 +28,7 @@ class TransitionPresentationAnimator: NSObject, UIViewControllerAnimatedTransiti
             let oldFrame = snapshot.2
             let newFrame = newSnapshotView?.2
             snapshotView.transform = CGAffineTransform.identity
-            snapshotView.center = newSnapshotView?.1 ?? CGPoint(x: 0, y: 0)
+            snapshotView.center = snapshot.1
             containerView.addSubview(snapshotView)
             containerView.backgroundColor = fromViewController.view.backgroundColor
             
@@ -40,6 +40,7 @@ class TransitionPresentationAnimator: NSObject, UIViewControllerAnimatedTransiti
             UIView.animate(withDuration: animationDuration, delay: 0.0, usingSpringWithDamping: 0.9, initialSpringVelocity: 0.5, options: [.curveEaseInOut],
                            animations: { () -> Void in
                             snapshotView.transform = CGAffineTransform(scaleX: (newFrame?.width ?? 0)/oldFrame.width, y: (newFrame?.height ?? 0)/oldFrame.height)
+                            snapshotView.center = newSnapshotView?.1 ?? CGPoint(x: 0, y: 0)
             }, completion: { (finished) -> Void in
                 snapshotView.removeFromSuperview()
                 toViewController.view.alpha = 1.0
