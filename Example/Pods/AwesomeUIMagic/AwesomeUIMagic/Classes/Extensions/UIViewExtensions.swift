@@ -127,13 +127,23 @@ extension UIView {
     // MARK: - Snapshots
     
     public func snapshotsFrom() -> [(UIView, CGPoint, CGRect)] {
-        var snapshots: [(UIView, CGPoint, CGRect)] = []
-        for view in self.subviews where !view.magicID.isEmpty {
-            view.subviews.forEach({ $0.isHidden = true })
-            if let snapshot = view.snapshotView(afterScreenUpdates: true) {
-                view.subviews.forEach({ $0.isHidden = false })
-                snapshot.magicID = view.magicID
-                snapshots.append((snapshot, view.superview?.convert(view.center, to: nil) ?? CGPoint.zero, view.superview?.convert(view.frame, to: nil) ?? CGRect.zero))
+        return processSnapshots(snapshotsArray: [])
+    }
+    
+    fileprivate func processSnapshots(_ subviews: [UIView]? = nil, snapshotsArray: [(UIView, CGPoint, CGRect)]) -> [(UIView, CGPoint, CGRect)] {
+        var snapshots = snapshotsArray
+        for view in (subviews ?? self.subviews) {
+            if !view.magicID.isEmpty {
+                view.subviews.forEach({ $0.isHidden = true })
+                if let snapshot = view.snapshotView(afterScreenUpdates: true) {
+                    view.subviews.forEach({ $0.isHidden = false })
+                    snapshot.magicID = view.magicID
+                    snapshots.append((snapshot, self.convert(view.center, from: view.superview), self.convert(view.frame, from: view.superview)))
+                }
+            }
+            
+            if !view.subviews.isEmpty {
+                snapshots = processSnapshots(view.subviews, snapshotsArray: snapshots)
             }
         }
         return snapshots
