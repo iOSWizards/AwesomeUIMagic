@@ -132,6 +132,7 @@ extension UIView {
             view.subviews.forEach({ $0.isHidden = true })
             if let snapshot = view.snapshotView(afterScreenUpdates: true) {
                 view.subviews.forEach({ $0.isHidden = false })
+                snapshot.magicID = view.magicID
                 snapshots.append((snapshot, view.center, view.frame))
             }
         }

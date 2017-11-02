@@ -30,12 +30,12 @@ class TransitionPresentationAnimator: NSObject, UIViewControllerAnimatedTransiti
             snapshotView.transform = CGAffineTransform.identity
             snapshotView.center = snapshot.1
             containerView.addSubview(snapshotView)
-            containerView.backgroundColor = fromViewController.view.backgroundColor
+            containerView.backgroundColor = UIColor.clear
             
             // hide the detail view until the snapshot is being animated
-            toViewController.view.alpha = 0.0
-            fromViewController.view.alpha = 0.0
+            toViewController.view.isHidden = true
             containerView.addSubview(toViewController.view)
+            hiddenNecessaryViews(true, snapshotView: snapshotView, fromViewController: fromViewController, toViewController: toViewController)
             
             UIView.animate(withDuration: animationDuration, delay: 0.0, usingSpringWithDamping: 0.9, initialSpringVelocity: 0.5, options: [.curveEaseInOut],
                            animations: { () -> Void in
@@ -43,14 +43,24 @@ class TransitionPresentationAnimator: NSObject, UIViewControllerAnimatedTransiti
                             snapshotView.center = newSnapshotView?.1 ?? CGPoint(x: 0, y: 0)
             }, completion: { (finished) -> Void in
                 snapshotView.removeFromSuperview()
-                toViewController.view.alpha = 1.0
-                transitionContext.completeTransition(finished)
+                UIView.transition(with: toViewController.view, duration: 0.5, options: [.curveEaseInOut], animations: {
+                    self.hiddenNecessaryViews(false, snapshotView: snapshotView, fromViewController: fromViewController, toViewController: toViewController)
+                    toViewController.view.isHidden = false
+                }, completion: { (ssuceees) in
+                    transitionContext.completeTransition(finished)
+                })
             })
         }
-        
-        
-        
-        
+    
+    }
+    
+    fileprivate func hiddenNecessaryViews(_ isHidden: Bool, snapshotView: UIView, fromViewController: UIViewController, toViewController: UIViewController) {
+        for view in fromViewController.view.subviews where view.magicID == snapshotView.magicID {
+            view.isHidden = isHidden
+        }
+        for view in toViewController.view.subviews where view.magicID == snapshotView.magicID {
+            view.isHidden = isHidden
+        }
     }
     
 }
