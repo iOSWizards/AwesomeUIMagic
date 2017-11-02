@@ -129,7 +129,9 @@ extension UIView {
     public func snapshotsFrom() -> [(UIView, CGPoint, CGRect)] {
         var snapshots: [(UIView, CGPoint, CGRect)] = []
         for view in self.subviews where !view.magicID.isEmpty {
+            view.subviews.forEach({ $0.isHidden = true })
             if let snapshot = view.snapshotView(afterScreenUpdates: true) {
+                view.subviews.forEach({ $0.isHidden = false })
                 snapshots.append((snapshot, view.center, view.frame))
             }
         }
