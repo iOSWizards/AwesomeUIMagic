@@ -61,11 +61,19 @@ class TransitionPresentationAnimator: NSObject, UIViewControllerAnimatedTransiti
     }
     
     fileprivate func hiddenNecessaryViews(_ isHidden: Bool, snapshotView: UIView, fromViewController: UIViewController, toViewController: UIViewController) {
-        for view in fromViewController.view.subviews where view.magicID == snapshotView.magicID {
-            view.isHidden = isHidden
-        }
-        for view in toViewController.view.subviews where view.magicID == snapshotView.magicID {
-            view.isHidden = isHidden
+        hiddenNecessaryViewRec(isHidden, subviews: fromViewController.view.subviews, snapshotView: snapshotView)
+        hiddenNecessaryViewRec(isHidden, subviews: toViewController.view.subviews, snapshotView: snapshotView)
+    }
+    
+    fileprivate func hiddenNecessaryViewRec(_ isHidden: Bool, subviews: [UIView], snapshotView: UIView) {
+        for view in subviews {
+            if view.magicID == snapshotView.magicID {
+                view.isHidden = isHidden
+            }
+            
+            if !view.subviews.isEmpty {
+                hiddenNecessaryViewRec(isHidden, subviews: view.subviews, snapshotView: snapshotView)
+            }
         }
     }
     
