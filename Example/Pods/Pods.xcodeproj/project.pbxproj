@@ -7,30 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B8297707AEF4B0284E7B587543451B6 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623B74C35A4FCDC65F1BA3E1B327B32F /* UIViewExtensions.swift */; };
-		0FD7F8F966C80151DDA00BD6F332A1EF /* UIViewAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F6D7967965F32202BAE0C217812B1A /* UIViewAnimations.swift */; };
-		3BCB9F2C7C29D89E3A83D2E6DC644C17 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053FDD7C05E27CB13A8CE21AD9F01A6B /* DesignableView.swift */; };
-		453925AC57BAD7607392A42731575BF5 /* DesignableTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5772F00E5BD0D8F3B44EA2531F5AEA8 /* DesignableTextView.swift */; };
+		071B6FAEBADA3C02E2A81A6FBAB1AA51 /* TransitionPresentationAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4A84FA121B537536CB6C1086080AC3 /* TransitionPresentationAnimator.swift */; };
+		17B55EA2AF9663327723378D6951B10F /* ObjectAssociation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2609E1D1A28F8DF6E89D9DEE7D8AC37 /* ObjectAssociation.swift */; };
+		3A6AFA7ABAB126B17973FE75D7915D57 /* DesignableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0A6FCD55B1A059D16EFAD67BE8F964 /* DesignableLabel.swift */; };
+		423617062A89FA64E763FDE0CFDE33A0 /* MagicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D248C817ABE8F9ECF58D0C030701140 /* MagicViewController.swift */; };
+		4299CD3234041EA6B70F5FA4263C4581 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		48202ABC9F268E722081D2EC6DF49266 /* UIViewAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E356A8A2DD8C008C836783A9C3DEE97 /* UIViewAnimations.swift */; };
+		48F255C3D80763E5E8635500420FE545 /* AwesomeUIMagic-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AED40AAD492ECFF5AF953A32608D504A /* AwesomeUIMagic-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4F333EDA94046C51CEED117A4A20DCC1 /* UIBezierPath+Polygon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700E109F5E40F69A5D021F538D19E431 /* UIBezierPath+Polygon.swift */; };
 		57AF5660126E785C8333BC201737F1AA /* Pods-AwesomeUIMagic_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D05EE791A26F7264B5747FDC40552BB /* Pods-AwesomeUIMagic_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		57CA8EFB0E2DFEF8035CA4C0EB9115D1 /* Pods-AwesomeUIMagic_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6866F61F62D44992231E7832827BD039 /* Pods-AwesomeUIMagic_Example-dummy.m */; };
-		5E7F08599D9C59CD4A51CF3D58DE6106 /* DesignableProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DBE4040B1810F999100EB87665EC24 /* DesignableProgressView.swift */; };
-		62E59390781F588310FDDBA39FC47A76 /* UIBezierPath+Polygon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2F2B7E521A26BAF358835C10E77798 /* UIBezierPath+Polygon.swift */; };
-		6808850EF80AC7095556569592ABA125 /* DesignableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F884394408E6FA61DC839DF242B8CFC9 /* DesignableTextField.swift */; };
-		8174BD92BB981792DB1E93C9A105A839 /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1958CF5ACE2DA72E5460F90C691BD3 /* DesignableButton.swift */; };
-		8C82B559792524252C2D8FFDE65AA799 /* AwesomeUIMagic-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B2F6C5BF167E9D67D07B2081EEFE21 /* AwesomeUIMagic-dummy.m */; };
+		5EA5C42876D2E628650BC7B852520BBA /* DesignableProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8507561331CB33552EFBF88E1031D672 /* DesignableProgressView.swift */; };
+		63E99C77AF37DE1D60A2BABB4C438A24 /* QuestContentTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAC946528A865199B91F66308E3F20F /* QuestContentTextView.swift */; };
+		681893513461CC060892802E07B611D4 /* DesignableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF4A7EB7C5DD6F556F2E2F7FC2293F0 /* DesignableTextField.swift */; };
+		79AC175246D8F9B1D5EC4BAA892D4539 /* TransitionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74C5437ADF840B569E50AF8A5BCCC87 /* TransitionDelegate.swift */; };
+		84B3A52BA9FA4887507EBE6102CB74F7 /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF11CE5ADE53275862A74D86204CDBFD /* DesignableButton.swift */; };
 		8D5B8FAB54FB172AF7E27DDE58068D38 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		9EAF56D3ACD33D0FFCBBC86EF45673CA /* DesignableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FDC865C74F1AE50C54C1DEE87E6E7C /* DesignableImageView.swift */; };
-		A72337CA1FAA1AA4004BBF11 /* TransitionPresentationAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72337C81FAA1AA3004BBF11 /* TransitionPresentationAnimator.swift */; };
-		A72337CB1FAA1AA4004BBF11 /* TransitionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72337C91FAA1AA3004BBF11 /* TransitionDelegate.swift */; };
-		A7BB36061FA9C1A60085D3C2 /* ObjectAssociation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BB36051FA9C1A60085D3C2 /* ObjectAssociation.swift */; };
-		CCB930AA256F43DA231627E13C392049 /* ParallaxHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617365E5EA4AB40CC2EF2EDDED2BD1BE /* ParallaxHeaderView.swift */; };
-		D11E4381490E1071452A56B8469F04A6 /* DesignableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3937C8EFF61633622B7F429DE81F73 /* DesignableLabel.swift */; };
-		D21493D9AB8017ADC3D5AB316523DA1F /* QuestContentTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1E22DEE9D20CB4BAE4E971AD823E25 /* QuestContentTextView.swift */; };
-		D3F764826AC1349DD245629FAA925F04 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		DBCC7F0109237DBA623C7CA571164717 /* DesignableNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD18CC0D40E2254393490C9566F4A6E /* DesignableNavigationBar.swift */; };
-		E0BACB92117FC7BABC19878506D1DA4A /* AwesomeUIMagic-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 712D58653FAAF3447CB23226650923DE /* AwesomeUIMagic-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F5B36789697ECA80F398EF553A77BB47 /* NSNumberExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E0B83712B3FE6940FE373F361D7FB5 /* NSNumberExtensions.swift */; };
-		FCB107441EF4094ACA28328B51015625 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7134322D2DCB72F5C497572CF9B7BAB1 /* UIViewControllerExtensions.swift */; };
+		93484AC3108EA2EAABBC6CDB10C3714F /* AwesomeUIMagic-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A383A5991720570408E602A7E3DC7BC /* AwesomeUIMagic-dummy.m */; };
+		A30F1B91D8F7694BD6AA96E38B7A2A25 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8A379C6825F0B212D52E2BCC6881EE /* UIViewControllerExtensions.swift */; };
+		A34BA60AADD038CD98B5647B6AD1CAC0 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577A3911393DAA13E77DE328DA1077E4 /* UIViewExtensions.swift */; };
+		AB4A4CA23C057E685016606D6BD26D44 /* NSNumberExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B935E2012BC272274A0FC1D983EAD0 /* NSNumberExtensions.swift */; };
+		B66821D51C5D6FE7B79E33AAE9494DB1 /* DesignableNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF61DB50B6AB7BA14DE6D4BC12A300E8 /* DesignableNavigationBar.swift */; };
+		CA19C0FAB6B1376ACA9CBAFF0620AA80 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B6F038F05F57B9783A1B5E7EBAD2D0 /* DesignableView.swift */; };
+		CF1ABEE703270D6C91CF5DCE64FBBDE4 /* DesignableTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D787AC719FC189C2CDFAB83E532402D7 /* DesignableTextView.swift */; };
+		E412D9BBCC4C8973605F5C0F3FEDAF0F /* ParallaxHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B85D575CA3590C23C42EE19738B200 /* ParallaxHeaderView.swift */; };
+		F239E2954830A355C20239FF38F1552A /* DesignableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C778F918EC8326E32F2C921F1C90FEED /* DesignableImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,61 +39,54 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 5414285C79711B258266856738031767;
+			remoteGlobalIDString = 502490E2EE6DF5906223471F3C14DE78;
 			remoteInfo = AwesomeUIMagic;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		053FDD7C05E27CB13A8CE21AD9F01A6B /* DesignableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableView.swift; path = AwesomeUIMagic/Classes/Designable/DesignableView.swift; sourceTree = "<group>"; };
-		07B2F6C5BF167E9D67D07B2081EEFE21 /* AwesomeUIMagic-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AwesomeUIMagic-dummy.m"; sourceTree = "<group>"; };
-		0C1958CF5ACE2DA72E5460F90C691BD3 /* DesignableButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableButton.swift; path = AwesomeUIMagic/Classes/Designable/DesignableButton.swift; sourceTree = "<group>"; };
+		05B935E2012BC272274A0FC1D983EAD0 /* NSNumberExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSNumberExtensions.swift; path = AwesomeUIMagic/Classes/Extensions/NSNumberExtensions.swift; sourceTree = "<group>"; };
+		0E356A8A2DD8C008C836783A9C3DEE97 /* UIViewAnimations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIViewAnimations.swift; path = AwesomeUIMagic/Classes/Extensions/UIViewAnimations.swift; sourceTree = "<group>"; };
 		1319B5BE28035F4A7AE0659038B1F3DD /* Pods-AwesomeUIMagic_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AwesomeUIMagic_Example-frameworks.sh"; sourceTree = "<group>"; };
-		1B434808DCEC8172D13F4398D583DEC0 /* Pods_AwesomeUIMagic_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AwesomeUIMagic_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		26DBE4040B1810F999100EB87665EC24 /* DesignableProgressView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableProgressView.swift; path = AwesomeUIMagic/Classes/Designable/DesignableProgressView.swift; sourceTree = "<group>"; };
+		1B434808DCEC8172D13F4398D583DEC0 /* Pods_AwesomeUIMagic_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AwesomeUIMagic_Example.framework; path = "Pods-AwesomeUIMagic_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2887707BDC2D0038FE132D81456E4B51 /* Pods-AwesomeUIMagic_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AwesomeUIMagic_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		2D05EE791A26F7264B5747FDC40552BB /* Pods-AwesomeUIMagic_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AwesomeUIMagic_Example-umbrella.h"; sourceTree = "<group>"; };
-		3D1E22DEE9D20CB4BAE4E971AD823E25 /* QuestContentTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuestContentTextView.swift; path = AwesomeUIMagic/Classes/QuestContentTextView.swift; sourceTree = "<group>"; };
-		3DACEB263608D4B3B410EA67D26EAB71 /* AwesomeUIMagic.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AwesomeUIMagic.xcconfig; sourceTree = "<group>"; };
-		55768994EC869A573DC251D3834C0363 /* Pods-AwesomeUIMagic_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-AwesomeUIMagic_Example.modulemap"; sourceTree = "<group>"; };
-		55FDC865C74F1AE50C54C1DEE87E6E7C /* DesignableImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableImageView.swift; path = AwesomeUIMagic/Classes/Designable/DesignableImageView.swift; sourceTree = "<group>"; };
-		5CD18CC0D40E2254393490C9566F4A6E /* DesignableNavigationBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableNavigationBar.swift; path = AwesomeUIMagic/Classes/Designable/DesignableNavigationBar.swift; sourceTree = "<group>"; };
-		617365E5EA4AB40CC2EF2EDDED2BD1BE /* ParallaxHeaderView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParallaxHeaderView.swift; path = AwesomeUIMagic/Classes/ParallaxHeaderView.swift; sourceTree = "<group>"; };
-		623B74C35A4FCDC65F1BA3E1B327B32F /* UIViewExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIViewExtensions.swift; path = AwesomeUIMagic/Classes/Extensions/UIViewExtensions.swift; sourceTree = "<group>"; };
+		2D248C817ABE8F9ECF58D0C030701140 /* MagicViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MagicViewController.swift; path = AwesomeUIMagic/Classes/MagicViewController.swift; sourceTree = "<group>"; };
+		39B6F038F05F57B9783A1B5E7EBAD2D0 /* DesignableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableView.swift; path = AwesomeUIMagic/Classes/Designable/DesignableView.swift; sourceTree = "<group>"; };
+		4A383A5991720570408E602A7E3DC7BC /* AwesomeUIMagic-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AwesomeUIMagic-dummy.m"; sourceTree = "<group>"; };
+		4A4A84FA121B537536CB6C1086080AC3 /* TransitionPresentationAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransitionPresentationAnimator.swift; path = AwesomeUIMagic/Classes/TransitionPresentationAnimator.swift; sourceTree = "<group>"; };
+		4AAC946528A865199B91F66308E3F20F /* QuestContentTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuestContentTextView.swift; path = AwesomeUIMagic/Classes/QuestContentTextView.swift; sourceTree = "<group>"; };
+		55768994EC869A573DC251D3834C0363 /* Pods-AwesomeUIMagic_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-AwesomeUIMagic_Example.modulemap"; sourceTree = "<group>"; };
+		577A3911393DAA13E77DE328DA1077E4 /* UIViewExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIViewExtensions.swift; path = AwesomeUIMagic/Classes/Extensions/UIViewExtensions.swift; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		6866F61F62D44992231E7832827BD039 /* Pods-AwesomeUIMagic_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AwesomeUIMagic_Example-dummy.m"; sourceTree = "<group>"; };
-		6C3937C8EFF61633622B7F429DE81F73 /* DesignableLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableLabel.swift; path = AwesomeUIMagic/Classes/Designable/DesignableLabel.swift; sourceTree = "<group>"; };
-		6D2F2B7E521A26BAF358835C10E77798 /* UIBezierPath+Polygon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIBezierPath+Polygon.swift"; path = "AwesomeUIMagic/Classes/Extensions/UIBezierPath+Polygon.swift"; sourceTree = "<group>"; };
-		712D58653FAAF3447CB23226650923DE /* AwesomeUIMagic-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AwesomeUIMagic-umbrella.h"; sourceTree = "<group>"; };
-		7134322D2DCB72F5C497572CF9B7BAB1 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIViewControllerExtensions.swift; path = AwesomeUIMagic/Classes/Extensions/UIViewControllerExtensions.swift; sourceTree = "<group>"; };
+		6FF4A7EB7C5DD6F556F2E2F7FC2293F0 /* DesignableTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableTextField.swift; path = AwesomeUIMagic/Classes/Designable/DesignableTextField.swift; sourceTree = "<group>"; };
+		700E109F5E40F69A5D021F538D19E431 /* UIBezierPath+Polygon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIBezierPath+Polygon.swift"; path = "AwesomeUIMagic/Classes/Extensions/UIBezierPath+Polygon.swift"; sourceTree = "<group>"; };
 		7729779F95FBAAD731C7FE1D08C1ABCA /* Pods-AwesomeUIMagic_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AwesomeUIMagic_Example.release.xcconfig"; sourceTree = "<group>"; };
-		8325C517A8DE47D126E6C1FB2C3E8CB7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		93E0B83712B3FE6940FE373F361D7FB5 /* NSNumberExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSNumberExtensions.swift; path = AwesomeUIMagic/Classes/Extensions/NSNumberExtensions.swift; sourceTree = "<group>"; };
-		A72337C81FAA1AA3004BBF11 /* TransitionPresentationAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionPresentationAnimator.swift; sourceTree = "<group>"; };
-		A72337C91FAA1AA3004BBF11 /* TransitionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionDelegate.swift; sourceTree = "<group>"; };
-		A7BB36051FA9C1A60085D3C2 /* ObjectAssociation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectAssociation.swift; sourceTree = "<group>"; };
+		8507561331CB33552EFBF88E1031D672 /* DesignableProgressView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableProgressView.swift; path = AwesomeUIMagic/Classes/Designable/DesignableProgressView.swift; sourceTree = "<group>"; };
+		86B85D575CA3590C23C42EE19738B200 /* ParallaxHeaderView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParallaxHeaderView.swift; path = AwesomeUIMagic/Classes/ParallaxHeaderView.swift; sourceTree = "<group>"; };
+		8EE9B07E199B7673D0BAF19BDB61BB26 /* AwesomeUIMagic-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AwesomeUIMagic-prefix.pch"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AED40AAD492ECFF5AF953A32608D504A /* AwesomeUIMagic-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AwesomeUIMagic-umbrella.h"; sourceTree = "<group>"; };
 		B56E324BD52D6B2C01660DAAFD5EFE84 /* Pods-AwesomeUIMagic_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AwesomeUIMagic_Example-resources.sh"; sourceTree = "<group>"; };
 		B572B5EA0388AEBBA8CCA67723197184 /* Pods-AwesomeUIMagic_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AwesomeUIMagic_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		B5F2FC94134B13F49CE695E283162476 /* AwesomeUIMagic.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AwesomeUIMagic.xcconfig; sourceTree = "<group>"; };
+		C778F918EC8326E32F2C921F1C90FEED /* DesignableImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableImageView.swift; path = AwesomeUIMagic/Classes/Designable/DesignableImageView.swift; sourceTree = "<group>"; };
+		CC825F939893C3D3CE697225E0EAAF5B /* AwesomeUIMagic.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = AwesomeUIMagic.modulemap; sourceTree = "<group>"; };
+		CC8A379C6825F0B212D52E2BCC6881EE /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIViewControllerExtensions.swift; path = AwesomeUIMagic/Classes/Extensions/UIViewControllerExtensions.swift; sourceTree = "<group>"; };
+		CE0A6FCD55B1A059D16EFAD67BE8F964 /* DesignableLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableLabel.swift; path = AwesomeUIMagic/Classes/Designable/DesignableLabel.swift; sourceTree = "<group>"; };
+		CF11CE5ADE53275862A74D86204CDBFD /* DesignableButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableButton.swift; path = AwesomeUIMagic/Classes/Designable/DesignableButton.swift; sourceTree = "<group>"; };
 		D054C78946C2DAA3FC86BEB90888ADFF /* Pods-AwesomeUIMagic_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AwesomeUIMagic_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		DAD78E1206828B4699D21FE5999535CA /* AwesomeUIMagic.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AwesomeUIMagic.modulemap; sourceTree = "<group>"; };
-		E9F6D7967965F32202BAE0C217812B1A /* UIViewAnimations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIViewAnimations.swift; path = AwesomeUIMagic/Classes/Extensions/UIViewAnimations.swift; sourceTree = "<group>"; };
-		EC1F4036F20A23F806B0E98196208FA5 /* AwesomeUIMagic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AwesomeUIMagic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2609E1D1A28F8DF6E89D9DEE7D8AC37 /* ObjectAssociation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObjectAssociation.swift; path = AwesomeUIMagic/Classes/ObjectAssociation.swift; sourceTree = "<group>"; };
+		D74C5437ADF840B569E50AF8A5BCCC87 /* TransitionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransitionDelegate.swift; path = AwesomeUIMagic/Classes/TransitionDelegate.swift; sourceTree = "<group>"; };
+		D787AC719FC189C2CDFAB83E532402D7 /* DesignableTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableTextView.swift; path = AwesomeUIMagic/Classes/Designable/DesignableTextView.swift; sourceTree = "<group>"; };
+		E76BF96CEC77AF9EEA6A74F44578345D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC1F4036F20A23F806B0E98196208FA5 /* AwesomeUIMagic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AwesomeUIMagic.framework; path = AwesomeUIMagic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF9FEDFCB5A6A5FC4B8994904835C62B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F5772F00E5BD0D8F3B44EA2531F5AEA8 /* DesignableTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableTextView.swift; path = AwesomeUIMagic/Classes/Designable/DesignableTextView.swift; sourceTree = "<group>"; };
-		F70EAED530E47AB3C036D0B268F598CA /* AwesomeUIMagic-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AwesomeUIMagic-prefix.pch"; sourceTree = "<group>"; };
-		F884394408E6FA61DC839DF242B8CFC9 /* DesignableTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableTextField.swift; path = AwesomeUIMagic/Classes/Designable/DesignableTextField.swift; sourceTree = "<group>"; };
+		FF61DB50B6AB7BA14DE6D4BC12A300E8 /* DesignableNavigationBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableNavigationBar.swift; path = AwesomeUIMagic/Classes/Designable/DesignableNavigationBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		14E58F62B5A950B31C2342F9F14DF7D6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D3F764826AC1349DD245629FAA925F04 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		DCCF708017C31BA27891DAB994519AF4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -101,18 +95,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E2748857C01BE4FDBC0CC22FB0A592B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4299CD3234041EA6B70F5FA4263C4581 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2F1BA399AA64FCE31C9A2F292C81C8EF /* Support Files */ = {
+		40A5C28BFBFA4B83C0CB524056A09F4E /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				DAD78E1206828B4699D21FE5999535CA /* AwesomeUIMagic.modulemap */,
-				3DACEB263608D4B3B410EA67D26EAB71 /* AwesomeUIMagic.xcconfig */,
-				07B2F6C5BF167E9D67D07B2081EEFE21 /* AwesomeUIMagic-dummy.m */,
-				F70EAED530E47AB3C036D0B268F598CA /* AwesomeUIMagic-prefix.pch */,
-				712D58653FAAF3447CB23226650923DE /* AwesomeUIMagic-umbrella.h */,
-				8325C517A8DE47D126E6C1FB2C3E8CB7 /* Info.plist */,
+				CC825F939893C3D3CE697225E0EAAF5B /* AwesomeUIMagic.modulemap */,
+				B5F2FC94134B13F49CE695E283162476 /* AwesomeUIMagic.xcconfig */,
+				4A383A5991720570408E602A7E3DC7BC /* AwesomeUIMagic-dummy.m */,
+				8EE9B07E199B7673D0BAF19BDB61BB26 /* AwesomeUIMagic-prefix.pch */,
+				AED40AAD492ECFF5AF953A32608D504A /* AwesomeUIMagic-umbrella.h */,
+				E76BF96CEC77AF9EEA6A74F44578345D /* Info.plist */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/AwesomeUIMagic";
@@ -127,20 +129,12 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		79DD5CA736D3EC71D36609EC3E2DD2D8 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				A94A85D7F4F9EF471610718552F2E173 /* AwesomeUIMagic */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				79DD5CA736D3EC71D36609EC3E2DD2D8 /* Pods */,
+				F5CE072A4E9F50049E38755608FC832E /* Pods */,
 				46E1C60E05DF4A9819B5711D27179D74 /* Products */,
 				EDE4C2F56B598B754F27F48E67BC633D /* Targets Support Files */,
 			);
@@ -164,29 +158,31 @@
 			path = "Target Support Files/Pods-AwesomeUIMagic_Example";
 			sourceTree = "<group>";
 		};
-		A94A85D7F4F9EF471610718552F2E173 /* AwesomeUIMagic */ = {
+		A91B04255B9947D6C66FDDE9BDB57905 /* AwesomeUIMagic */ = {
 			isa = PBXGroup;
 			children = (
-				0C1958CF5ACE2DA72E5460F90C691BD3 /* DesignableButton.swift */,
-				55FDC865C74F1AE50C54C1DEE87E6E7C /* DesignableImageView.swift */,
-				6C3937C8EFF61633622B7F429DE81F73 /* DesignableLabel.swift */,
-				5CD18CC0D40E2254393490C9566F4A6E /* DesignableNavigationBar.swift */,
-				26DBE4040B1810F999100EB87665EC24 /* DesignableProgressView.swift */,
-				F884394408E6FA61DC839DF242B8CFC9 /* DesignableTextField.swift */,
-				F5772F00E5BD0D8F3B44EA2531F5AEA8 /* DesignableTextView.swift */,
-				053FDD7C05E27CB13A8CE21AD9F01A6B /* DesignableView.swift */,
-				93E0B83712B3FE6940FE373F361D7FB5 /* NSNumberExtensions.swift */,
-				617365E5EA4AB40CC2EF2EDDED2BD1BE /* ParallaxHeaderView.swift */,
-				3D1E22DEE9D20CB4BAE4E971AD823E25 /* QuestContentTextView.swift */,
-				6D2F2B7E521A26BAF358835C10E77798 /* UIBezierPath+Polygon.swift */,
-				E9F6D7967965F32202BAE0C217812B1A /* UIViewAnimations.swift */,
-				7134322D2DCB72F5C497572CF9B7BAB1 /* UIViewControllerExtensions.swift */,
-				623B74C35A4FCDC65F1BA3E1B327B32F /* UIViewExtensions.swift */,
-				A7BB36051FA9C1A60085D3C2 /* ObjectAssociation.swift */,
-				A72337C91FAA1AA3004BBF11 /* TransitionDelegate.swift */,
-				A72337C81FAA1AA3004BBF11 /* TransitionPresentationAnimator.swift */,
-				2F1BA399AA64FCE31C9A2F292C81C8EF /* Support Files */,
+				CF11CE5ADE53275862A74D86204CDBFD /* DesignableButton.swift */,
+				C778F918EC8326E32F2C921F1C90FEED /* DesignableImageView.swift */,
+				CE0A6FCD55B1A059D16EFAD67BE8F964 /* DesignableLabel.swift */,
+				FF61DB50B6AB7BA14DE6D4BC12A300E8 /* DesignableNavigationBar.swift */,
+				8507561331CB33552EFBF88E1031D672 /* DesignableProgressView.swift */,
+				6FF4A7EB7C5DD6F556F2E2F7FC2293F0 /* DesignableTextField.swift */,
+				D787AC719FC189C2CDFAB83E532402D7 /* DesignableTextView.swift */,
+				39B6F038F05F57B9783A1B5E7EBAD2D0 /* DesignableView.swift */,
+				2D248C817ABE8F9ECF58D0C030701140 /* MagicViewController.swift */,
+				05B935E2012BC272274A0FC1D983EAD0 /* NSNumberExtensions.swift */,
+				D2609E1D1A28F8DF6E89D9DEE7D8AC37 /* ObjectAssociation.swift */,
+				86B85D575CA3590C23C42EE19738B200 /* ParallaxHeaderView.swift */,
+				4AAC946528A865199B91F66308E3F20F /* QuestContentTextView.swift */,
+				D74C5437ADF840B569E50AF8A5BCCC87 /* TransitionDelegate.swift */,
+				4A4A84FA121B537536CB6C1086080AC3 /* TransitionPresentationAnimator.swift */,
+				700E109F5E40F69A5D021F538D19E431 /* UIBezierPath+Polygon.swift */,
+				0E356A8A2DD8C008C836783A9C3DEE97 /* UIViewAnimations.swift */,
+				CC8A379C6825F0B212D52E2BCC6881EE /* UIViewControllerExtensions.swift */,
+				577A3911393DAA13E77DE328DA1077E4 /* UIViewExtensions.swift */,
+				40A5C28BFBFA4B83C0CB524056A09F4E /* Support Files */,
 			);
+			name = AwesomeUIMagic;
 			path = AwesomeUIMagic;
 			sourceTree = "<group>";
 		};
@@ -214,6 +210,14 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		F5CE072A4E9F50049E38755608FC832E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A91B04255B9947D6C66FDDE9BDB57905 /* AwesomeUIMagic */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -225,24 +229,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C8A12721DE973C4FB4BC84DA55A4B912 /* Headers */ = {
+		ECD5D2DBD3F3C271A4FEFDD0F53DF2CF /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0BACB92117FC7BABC19878506D1DA4A /* AwesomeUIMagic-umbrella.h in Headers */,
+				48F255C3D80763E5E8635500420FE545 /* AwesomeUIMagic-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		5414285C79711B258266856738031767 /* AwesomeUIMagic */ = {
+		502490E2EE6DF5906223471F3C14DE78 /* AwesomeUIMagic */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9C5C238BB12E3773D5742E3E18D3F79C /* Build configuration list for PBXNativeTarget "AwesomeUIMagic" */;
+			buildConfigurationList = 8C095EA8D564384DFF74C2A1817FDFD3 /* Build configuration list for PBXNativeTarget "AwesomeUIMagic" */;
 			buildPhases = (
-				1A5A8E21C9484D823A3BE0DE5C1EBFC0 /* Sources */,
-				14E58F62B5A950B31C2342F9F14DF7D6 /* Frameworks */,
-				C8A12721DE973C4FB4BC84DA55A4B912 /* Headers */,
+				BD6F603166726C4B5E5A358FD366B363 /* Sources */,
+				E2748857C01BE4FDBC0CC22FB0A592B5 /* Frameworks */,
+				ECD5D2DBD3F3C271A4FEFDD0F53DF2CF /* Headers */,
 			);
 			buildRules = (
 			);
@@ -292,7 +296,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5414285C79711B258266856738031767 /* AwesomeUIMagic */,
+				502490E2EE6DF5906223471F3C14DE78 /* AwesomeUIMagic */,
 				C0A792A9273AF5BBFF7AFCAC42223D13 /* Pods-AwesomeUIMagic_Example */,
 			);
 		};
@@ -307,29 +311,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1A5A8E21C9484D823A3BE0DE5C1EBFC0 /* Sources */ = {
+		BD6F603166726C4B5E5A358FD366B363 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C82B559792524252C2D8FFDE65AA799 /* AwesomeUIMagic-dummy.m in Sources */,
-				8174BD92BB981792DB1E93C9A105A839 /* DesignableButton.swift in Sources */,
-				9EAF56D3ACD33D0FFCBBC86EF45673CA /* DesignableImageView.swift in Sources */,
-				D11E4381490E1071452A56B8469F04A6 /* DesignableLabel.swift in Sources */,
-				DBCC7F0109237DBA623C7CA571164717 /* DesignableNavigationBar.swift in Sources */,
-				5E7F08599D9C59CD4A51CF3D58DE6106 /* DesignableProgressView.swift in Sources */,
-				6808850EF80AC7095556569592ABA125 /* DesignableTextField.swift in Sources */,
-				453925AC57BAD7607392A42731575BF5 /* DesignableTextView.swift in Sources */,
-				3BCB9F2C7C29D89E3A83D2E6DC644C17 /* DesignableView.swift in Sources */,
-				A72337CB1FAA1AA4004BBF11 /* TransitionDelegate.swift in Sources */,
-				A72337CA1FAA1AA4004BBF11 /* TransitionPresentationAnimator.swift in Sources */,
-				F5B36789697ECA80F398EF553A77BB47 /* NSNumberExtensions.swift in Sources */,
-				CCB930AA256F43DA231627E13C392049 /* ParallaxHeaderView.swift in Sources */,
-				D21493D9AB8017ADC3D5AB316523DA1F /* QuestContentTextView.swift in Sources */,
-				62E59390781F588310FDDBA39FC47A76 /* UIBezierPath+Polygon.swift in Sources */,
-				0FD7F8F966C80151DDA00BD6F332A1EF /* UIViewAnimations.swift in Sources */,
-				FCB107441EF4094ACA28328B51015625 /* UIViewControllerExtensions.swift in Sources */,
-				0B8297707AEF4B0284E7B587543451B6 /* UIViewExtensions.swift in Sources */,
-				A7BB36061FA9C1A60085D3C2 /* ObjectAssociation.swift in Sources */,
+				93484AC3108EA2EAABBC6CDB10C3714F /* AwesomeUIMagic-dummy.m in Sources */,
+				84B3A52BA9FA4887507EBE6102CB74F7 /* DesignableButton.swift in Sources */,
+				F239E2954830A355C20239FF38F1552A /* DesignableImageView.swift in Sources */,
+				3A6AFA7ABAB126B17973FE75D7915D57 /* DesignableLabel.swift in Sources */,
+				B66821D51C5D6FE7B79E33AAE9494DB1 /* DesignableNavigationBar.swift in Sources */,
+				5EA5C42876D2E628650BC7B852520BBA /* DesignableProgressView.swift in Sources */,
+				681893513461CC060892802E07B611D4 /* DesignableTextField.swift in Sources */,
+				CF1ABEE703270D6C91CF5DCE64FBBDE4 /* DesignableTextView.swift in Sources */,
+				CA19C0FAB6B1376ACA9CBAFF0620AA80 /* DesignableView.swift in Sources */,
+				423617062A89FA64E763FDE0CFDE33A0 /* MagicViewController.swift in Sources */,
+				AB4A4CA23C057E685016606D6BD26D44 /* NSNumberExtensions.swift in Sources */,
+				17B55EA2AF9663327723378D6951B10F /* ObjectAssociation.swift in Sources */,
+				E412D9BBCC4C8973605F5C0F3FEDAF0F /* ParallaxHeaderView.swift in Sources */,
+				63E99C77AF37DE1D60A2BABB4C438A24 /* QuestContentTextView.swift in Sources */,
+				79AC175246D8F9B1D5EC4BAA892D4539 /* TransitionDelegate.swift in Sources */,
+				071B6FAEBADA3C02E2A81A6FBAB1AA51 /* TransitionPresentationAnimator.swift in Sources */,
+				4F333EDA94046C51CEED117A4A20DCC1 /* UIBezierPath+Polygon.swift in Sources */,
+				48202ABC9F268E722081D2EC6DF49266 /* UIViewAnimations.swift in Sources */,
+				A30F1B91D8F7694BD6AA96E38B7A2A25 /* UIViewControllerExtensions.swift in Sources */,
+				A34BA60AADD038CD98B5647B6AD1CAC0 /* UIViewExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,7 +344,7 @@
 		9D5CCE62F94A9E388E09C0C6972E1741 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AwesomeUIMagic;
-			target = 5414285C79711B258266856738031767 /* AwesomeUIMagic */;
+			target = 502490E2EE6DF5906223471F3C14DE78 /* AwesomeUIMagic */;
 			targetProxy = ABFB5406BD87FE5749C3BEE8BBB0BD11 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -389,6 +394,41 @@
 			};
 			name = Release;
 		};
+		3D2DD63751F316E832E2638A64F1C367 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5F2FC94134B13F49CE695E283162476 /* AwesomeUIMagic.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AwesomeUIMagic/AwesomeUIMagic-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AwesomeUIMagic/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AwesomeUIMagic/AwesomeUIMagic.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = AwesomeUIMagic;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		4859E8974E2ADF6704F9FB89A10C61B4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7729779F95FBAAD731C7FE1D08C1ABCA /* Pods-AwesomeUIMagic_Example.release.xcconfig */;
@@ -426,41 +466,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		4C360A51367E3421F183E4CFF58BFB7C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3DACEB263608D4B3B410EA67D26EAB71 /* AwesomeUIMagic.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/AwesomeUIMagic/AwesomeUIMagic-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AwesomeUIMagic/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/AwesomeUIMagic/AwesomeUIMagic.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = AwesomeUIMagic;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		8388020BB21270E073A4193693DF64E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -500,6 +505,41 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		8D8FA9AE7E4188BC8BF13D488F7BFE48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5F2FC94134B13F49CE695E283162476 /* AwesomeUIMagic.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AwesomeUIMagic/AwesomeUIMagic-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AwesomeUIMagic/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AwesomeUIMagic/AwesomeUIMagic.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = AwesomeUIMagic;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		EED546DBB23FC32035C9BDC4E22B30BD /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -550,41 +590,6 @@
 			};
 			name = Debug;
 		};
-		F77FE2F1277AE1976762D78512764E0A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3DACEB263608D4B3B410EA67D26EAB71 /* AwesomeUIMagic.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/AwesomeUIMagic/AwesomeUIMagic-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AwesomeUIMagic/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/AwesomeUIMagic/AwesomeUIMagic.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = AwesomeUIMagic;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -597,11 +602,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9C5C238BB12E3773D5742E3E18D3F79C /* Build configuration list for PBXNativeTarget "AwesomeUIMagic" */ = {
+		8C095EA8D564384DFF74C2A1817FDFD3 /* Build configuration list for PBXNativeTarget "AwesomeUIMagic" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4C360A51367E3421F183E4CFF58BFB7C /* Debug */,
-				F77FE2F1277AE1976762D78512764E0A /* Release */,
+				3D2DD63751F316E832E2638A64F1C367 /* Debug */,
+				8D8FA9AE7E4188BC8BF13D488F7BFE48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

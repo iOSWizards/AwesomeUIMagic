@@ -9,13 +9,10 @@
 import UIKit
 import AwesomeUIMagic
 
-class ViewController: UIViewController {
-
-    let viewTransitionDelegate = TransitionDelegate()
+class ViewController: MagicViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -25,13 +22,6 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let detailViewController = segue.destination as? DetailViewController {
-            detailViewController.transitioningDelegate = viewTransitionDelegate
-            detailViewController.modalPresentationStyle = .custom
-        }
     }
 
 }
