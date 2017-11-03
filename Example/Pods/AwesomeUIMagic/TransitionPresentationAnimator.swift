@@ -21,6 +21,7 @@ class TransitionPresentationAnimator: NSObject, UIViewControllerAnimatedTransiti
         
         let animationDuration = self.transitionDuration(using: transitionContext)
         
+        let group = DispatchGroup()
         for snapshot in fromViewController.view.snapshotsFrom() {
             let snapshotView = snapshot.0
             let newSnapshotView = toViewController.view.snapshotsFrom().first(where: { $0.0.magicID == snapshotView.magicID })
@@ -37,6 +38,7 @@ class TransitionPresentationAnimator: NSObject, UIViewControllerAnimatedTransiti
             containerView.addSubview(toViewController.view)
             hiddenNecessaryViews(true, snapshotView: snapshotView, fromViewController: fromViewController, toViewController: toViewController)
             
+            group.enter()
             UIView.animate(withDuration: animationDuration, delay: 0.0, options: [.curveEaseInOut],
                            animations: { () -> Void in
                             snapshotView.transform = CGAffineTransform(scaleX: (newFrame?.width ?? 0)/oldFrame.width, y: (newFrame?.height ?? 0)/oldFrame.height)
@@ -47,9 +49,13 @@ class TransitionPresentationAnimator: NSObject, UIViewControllerAnimatedTransiti
                     self.hiddenNecessaryViews(false, snapshotView: snapshotView, fromViewController: fromViewController, toViewController: toViewController)
                     toViewController.view.isHidden = false
                 }, completion: { (success) in
-                    transitionContext.completeTransition(success)
+                    group.leave()
                 })
             })
+        }
+        
+        group.notify(queue: .main) {
+            transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
         }
     
     }
