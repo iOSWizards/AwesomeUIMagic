@@ -209,12 +209,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = S2DSCP4F3H;
+						DevelopmentTeam = 496E7TU5N4;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = S2DSCP4F3H;
+						DevelopmentTeam = 496E7TU5N4;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -449,7 +449,7 @@
 			baseConfigurationReference = 9C275486DC10BB9703710759 /* Pods-AwesomeUIMagic_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = S2DSCP4F3H;
+				DEVELOPMENT_TEAM = 496E7TU5N4;
 				INFOPLIST_FILE = AwesomeUIMagic/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -466,7 +466,7 @@
 			baseConfigurationReference = E36FF5F18FF028EB0E0D7739 /* Pods-AwesomeUIMagic_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = S2DSCP4F3H;
+				DEVELOPMENT_TEAM = 496E7TU5N4;
 				INFOPLIST_FILE = AwesomeUIMagic/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -481,7 +481,7 @@
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEVELOPMENT_TEAM = S2DSCP4F3H;
+				DEVELOPMENT_TEAM = 496E7TU5N4;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -502,7 +502,7 @@
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEVELOPMENT_TEAM = S2DSCP4F3H;
+				DEVELOPMENT_TEAM = 496E7TU5N4;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",

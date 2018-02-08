@@ -17,7 +17,7 @@ enum ShapeType: Int {
 @IBDesignable
 open class DesignableView: UIView, ShimmerEffect {
     
-    var shadowLayer: UIView?
+    open var shadowLayer: UIView?
     
     deinit {
         shadowLayer?.removeFromSuperview()
