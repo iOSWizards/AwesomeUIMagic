@@ -9,12 +9,22 @@
 import UIKit
 
 @IBDesignable
-open class DesignableLabel: UILabel {
+extension UILabel {
     
-    // MARK: - Formatting
+    // MARK: - Associations
     
-    @IBInspectable open var lineHeight: CGFloat = 0 {
-        didSet {
+    private static let lineHeightAssociation = ObjectAssociation<NSObject>()
+    
+    // MARK: - Inspectables
+    
+    @IBInspectable
+    public var lineHeight: CGFloat {
+        get {
+            return UILabel.lineHeightAssociation[self] as? CGFloat ?? 0
+        }
+        set (lineHeight) {
+            UILabel.lineHeightAssociation[self] = lineHeight as NSObject
+            
             let attributedString = NSMutableAttributedString(string: self.text!)
             let paragraphStyle = NSMutableParagraphStyle()
             paragraphStyle.lineSpacing = lineHeight - self.font.pointSize
@@ -23,6 +33,4 @@ open class DesignableLabel: UILabel {
             self.attributedText = attributedString
         }
     }
-    
-    
 }
