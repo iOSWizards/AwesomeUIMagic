@@ -7,6 +7,10 @@
 
 import UIKit
 
+public enum ShimmerAnimationKeyPath: String {
+    case shimmerViewLocations = "locations"
+}
+
 public protocol ShimmerEffect {
     var animationDuration: TimeInterval { get set }
     var animationDelay: TimeInterval {get set }
@@ -17,10 +21,6 @@ public protocol ShimmerEffect {
     var gradientHighlightRatio: Double { get set }
     
     var gradientLayer: CAGradientLayer { get }
-}
-
-public enum ShimmerAnimationKeyPath: String {
-    case shimmerViewLocations = "locations"
 }
 
 extension ShimmerEffect {

@@ -15,7 +15,6 @@ extension UIView {
     private static let borderColorAssociation = ObjectAssociation<NSObject>()
     private static let borderWidthAssociation = ObjectAssociation<NSObject>()
     private static let cornerRadiusAssociation = ObjectAssociation<NSObject>()
-    private static let startShimmeringOnLoadAssociation = ObjectAssociation<NSObject>()
     
     // MARK: - Inspectables
     
@@ -53,22 +52,6 @@ extension UIView {
             
             layer.cornerRadius = cornerRadius
             layer.masksToBounds = true
-        }
-    }
-    
-    @IBInspectable
-    public var startShimmeringOnLoad: Bool {
-        get {
-            return UIView.startShimmeringOnLoadAssociation[self] as? Bool ?? false
-        }
-        set (startShimmeringOnLoad) {
-            UIView.startShimmeringOnLoadAssociation[self] = startShimmeringOnLoad as NSObject
-            
-            if startShimmeringOnLoad {
-                startShimmerAnimation()
-            } else {
-                stopShimmerAnimation()
-            }
         }
     }
     
