@@ -25,13 +25,6 @@ open class DesignableTextField: UITextField {
         }
     }
     
-    @IBInspectable open var cornerRadius: CGFloat = 0 {
-        didSet {
-            layer.cornerRadius = cornerRadius
-            layer.masksToBounds = true
-        }
-    }
-    
     // MARK: - TextField
     
     @IBInspectable open var insetX: CGFloat = 0

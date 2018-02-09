@@ -25,11 +25,4 @@ open class DesignableProgressView: UIProgressView {
         }
     }
 
-    @IBInspectable open var cornerRadius: CGFloat = 0 {
-        didSet {
-            layer.cornerRadius = cornerRadius
-            layer.masksToBounds = true
-        }
-    }
-
 }

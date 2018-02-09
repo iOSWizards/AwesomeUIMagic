@@ -9,7 +9,7 @@
 import UIKit
 import AwesomeUIMagic
 
-class ViewController: MagicViewController {
+class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()

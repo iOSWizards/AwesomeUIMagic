@@ -25,12 +25,5 @@ open class DesignableImageView: UIImageView {
         }
     }
     
-    @IBInspectable open var cornerRadius: CGFloat = 0 {
-        didSet {
-            layer.cornerRadius = cornerRadius
-            layer.masksToBounds = true
-        }
-    }
-    
 
 }

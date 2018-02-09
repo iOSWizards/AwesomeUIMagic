@@ -47,13 +47,6 @@ open class DesignableButton: UIButton {
     
     @IBInspectable open var unfocusedBorderWidth: CGFloat = 0
     
-    @IBInspectable open var cornerRadius: CGFloat = 0 {
-        didSet {
-            layer.cornerRadius = cornerRadius
-            layer.masksToBounds = true
-        }
-    }
-    
     @IBInspectable open var selectedBackgroundColor: UIColor = UIColor.clear
     
     @IBInspectable open var unselectedBackgroundColor: UIColor = UIColor.clear {

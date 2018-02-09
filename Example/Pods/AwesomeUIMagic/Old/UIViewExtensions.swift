@@ -108,45 +108,45 @@ extension UIView {
         self.addSubview(blurEffectView)
     }
     
-    // MARK: - MagicID Associations
-    
-    private static let magicID = ObjectAssociation<NSObject>()
-    
-    // MARK: - MagicID
-    
-    @IBInspectable
-    public var magicID: String {
-        get {
-            return UIView.magicID[self] as? String ?? ""
-        }
-        set (newValue) {
-            UIView.magicID[self] = newValue as NSObject
-        }
-    }
-    
-    // MARK: - Snapshots
-    
-    public func snapshotsFrom() -> [(UIView, CGPoint, CGRect)] {
-        return processSnapshots(snapshotsArray: [])
-    }
-    
-    fileprivate func processSnapshots(_ subviews: [UIView]? = nil, snapshotsArray: [(UIView, CGPoint, CGRect)]) -> [(UIView, CGPoint, CGRect)] {
-        var snapshots = snapshotsArray
-        for view in (subviews ?? self.subviews) {
-            if !view.magicID.isEmpty {
-                view.subviews.forEach({ $0.isHidden = true })
-                if let snapshot = view.snapshotView(afterScreenUpdates: true) {
-                    view.subviews.forEach({ $0.isHidden = false })
-                    snapshot.magicID = view.magicID
-                    snapshots.append((snapshot, self.convert(view.center, from: view.superview), self.convert(view.frame, from: view.superview)))
-                }
-            }
-            
-            if !view.subviews.isEmpty {
-                snapshots = processSnapshots(view.subviews, snapshotsArray: snapshots)
-            }
-        }
-        return snapshots
-    }
+//    // MARK: - MagicID Associations
+//    
+//    private static let magicID = ObjectAssociation<NSObject>()
+//
+//    // MARK: - MagicID
+//
+//    @IBInspectable
+//    public var magicID: String {
+//        get {
+//            return UIView.magicID[self] as? String ?? ""
+//        }
+//        set (newValue) {
+//            UIView.magicID[self] = newValue as NSObject
+//        }
+//    }
+//
+//    // MARK: - Snapshots
+//
+//    public func snapshotsFrom() -> [(UIView, CGPoint, CGRect)] {
+//        return processSnapshots(snapshotsArray: [])
+//    }
+//
+//    fileprivate func processSnapshots(_ subviews: [UIView]? = nil, snapshotsArray: [(UIView, CGPoint, CGRect)]) -> [(UIView, CGPoint, CGRect)] {
+//        var snapshots = snapshotsArray
+//        for view in (subviews ?? self.subviews) {
+//            if !view.magicID.isEmpty {
+//                view.subviews.forEach({ $0.isHidden = true })
+//                if let snapshot = view.snapshotView(afterScreenUpdates: true) {
+//                    view.subviews.forEach({ $0.isHidden = false })
+//                    snapshot.magicID = view.magicID
+//                    snapshots.append((snapshot, self.convert(view.center, from: view.superview), self.convert(view.frame, from: view.superview)))
+//                }
+//            }
+//
+//            if !view.subviews.isEmpty {
+//                snapshots = processSnapshots(view.subviews, snapshotsArray: snapshots)
+//            }
+//        }
+//        return snapshots
+//    }
     
 }

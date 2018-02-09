@@ -15,7 +15,7 @@ enum ShapeType: Int {
 }
 
 @IBDesignable
-open class DesignableView: UIView, ShimmerEffect {
+open class DesignableView: UIView {
     
     open var shadowLayer: UIView?
     
@@ -54,13 +54,6 @@ open class DesignableView: UIView, ShimmerEffect {
     @IBInspectable open var borderWidth: CGFloat = 0 {
         didSet {
             layer.borderWidth = borderWidth
-        }
-    }
-    
-    @IBInspectable open var cornerRadius: CGFloat = 0 {
-        didSet {
-            layer.cornerRadius = cornerRadius
-            layer.masksToBounds = true
         }
     }
     
@@ -128,25 +121,17 @@ open class DesignableView: UIView, ShimmerEffect {
         }
     }
     
-    // Shimmer
     
-    override open static var layerClass: AnyClass {
-        return CAGradientLayer.self
+    // MARK: - Shadow
+    
+    open func updateShadow() {
+        self.layer.shadowOffset = shadowOffset
+        self.layer.shadowColor = shadowColor.cgColor
+        self.layer.shadowRadius = shadowRadius
+        self.layer.shadowOpacity = shadowOpacity
+        self.layer.shadowPath = UIBezierPath(rect: self.layer.bounds).cgPath
+        self.layer.masksToBounds = true // this will not update the shadow, but fixes the corner radius
     }
-    
-    open var gradientLayer: CAGradientLayer {
-        return layer as! CAGradientLayer
-    }
-    
-    open var animationDuration: TimeInterval = 3
-    
-    open var animationDelay: TimeInterval = 1.5
-    
-    open var gradientHighlightRatio: Double = 0.3
-    
-    @IBInspectable open var shimmerGradientTint: UIColor = .black
-    
-    @IBInspectable open var shimmerGradientHighlight: UIColor = .white
     
     open override func layoutSubviews() {
         super.layoutSubviews()
@@ -184,67 +169,5 @@ open class DesignableView: UIView, ShimmerEffect {
             addTringleView(rect, fillColor: self.triangleColor)
         }
     }
-    
-    // MARK: - Shadow
-    
-    open func updateShadow() {
-        self.layer.shadowOffset = shadowOffset
-        self.layer.shadowColor = shadowColor.cgColor
-        self.layer.shadowRadius = shadowRadius
-        self.layer.shadowOpacity = shadowOpacity
-        self.layer.shadowPath = UIBezierPath(rect: self.layer.bounds).cgPath
-        self.layer.masksToBounds = true // this will not update the shadow, but fixes the corner radius
-    }
 }
 
-// MARK: - Shimmer
-
-public protocol ShimmerEffect {
-    var animationDuration: TimeInterval { set get }
-    var animationDelay: TimeInterval {set get }
-    
-    var shimmerGradientTint: UIColor { set get }
-    var shimmerGradientHighlight: UIColor { set get }
-    
-    var gradientHighlightRatio: Double { set get }
-    
-    var gradientLayer: CAGradientLayer { get }
-}
-
-public enum ShimmerAnimationKeyPath: String {
-    case shimmerViewLocations = "locations"
-}
-
-extension ShimmerEffect {
-    
-    public func addShimmerAnimation() {
-        
-        let startLocations = [NSNumber(value: -gradientHighlightRatio), NSNumber(value: -gradientHighlightRatio/2), 0.0]
-        let endLocations = [1, NSNumber(value: 1+(gradientHighlightRatio/2)), NSNumber(value: 1+gradientHighlightRatio)]
-        let gradientColors = [shimmerGradientTint.cgColor, shimmerGradientHighlight.cgColor, shimmerGradientTint.cgColor]
-        
-        gradientLayer.startPoint = CGPoint(x: -gradientHighlightRatio, y: 0.5)
-        gradientLayer.endPoint = CGPoint(x: 1+gradientHighlightRatio, y: 0.5)
-        gradientLayer.locations = startLocations
-        gradientLayer.colors = gradientColors
-        
-        let shimmerAnimation = CABasicAnimation(keyPath: ShimmerAnimationKeyPath.shimmerViewLocations.rawValue)
-        shimmerAnimation.fromValue = startLocations
-        shimmerAnimation.toValue = endLocations
-        shimmerAnimation.duration = animationDuration
-        shimmerAnimation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
-        
-        let animationGroup = CAAnimationGroup()
-        animationGroup.duration = animationDuration + animationDelay
-        animationGroup.repeatCount = .infinity
-        animationGroup.animations = [shimmerAnimation]
-        
-        gradientLayer.removeAnimation(forKey: ShimmerAnimationKeyPath.shimmerViewLocations.rawValue)
-        gradientLayer.add(animationGroup, forKey: ShimmerAnimationKeyPath.shimmerViewLocations.rawValue)
-    }
-    
-    public func removeShimmerAnimation() {
-        gradientLayer.removeAnimation(forKey: ShimmerAnimationKeyPath.shimmerViewLocations.rawValue)
-    }
-    
-}
