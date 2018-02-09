@@ -9,6 +9,8 @@ import UIKit
 
 public class ShadowLayer: UIView {
     
+    fileprivate var shadowView: UIView?
+    
     public func setProperties(shadowColor: UIColor,
                               shadowOffset: CGSize,
                               shadowOpacity: Float,
@@ -23,6 +25,38 @@ public class ShadowLayer: UIView {
         layer.shouldRasterize = true
         layer.masksToBounds = true
         clipsToBounds = false
+    }
+    
+    public override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        updateLayout()
+    }
+    
+    public func updateLayout() {
+        guard let superview = superview else {
+            return
+        }
+        
+        guard let shadowView = shadowView else {
+            return
+        }
+        
+        guard shadowView.constraints.count > 0 else {
+            return
+        }
+        
+        superview.removeConstraints(constraints)
+        
+        translatesAutoresizingMaskIntoConstraints = false
+        
+        superview.addConstraint(NSLayoutConstraint(item: self, attribute: .centerX, relatedBy: .equal, toItem: shadowView, attribute: .centerX, multiplier: 1, constant: 0))
+        
+        superview.addConstraint(NSLayoutConstraint(item: self, attribute: .centerY, relatedBy: .equal, toItem: shadowView, attribute: .centerY, multiplier: 1, constant: 0))
+        
+        superview.addConstraint(NSLayoutConstraint(item: self, attribute: .width, relatedBy: .equal, toItem: shadowView, attribute: .width, multiplier: 1, constant: 0))
+        
+        superview.addConstraint(NSLayoutConstraint(item: self, attribute: .height, relatedBy: .equal, toItem: shadowView, attribute: .height, multiplier: 1, constant: 0))
     }
 }
 
@@ -40,8 +74,10 @@ extension UIView {
                                   shadowOpacity: shadowOpacity,
                                   shadowRadius: self.layer.cornerRadius > 0 ? self.layer.cornerRadius/2 : shadowRadius)
         
-        self.superview?.addSubview(shadowLayer)
-        self.superview?.bringSubview(toFront: self)
+        superview?.addSubview(shadowLayer)
+        superview?.bringSubview(toFront: self)
+        
+        shadowLayer.updateLayout()
     }
     
     public func removeShadowLayer() {

@@ -30,7 +30,6 @@
 		A34BA60AADD038CD98B5647B6AD1CAC0 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577A3911393DAA13E77DE328DA1077E4 /* UIViewExtensions.swift */; };
 		AB4A4CA23C057E685016606D6BD26D44 /* NSNumberExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B935E2012BC272274A0FC1D983EAD0 /* NSNumberExtensions.swift */; };
 		B66821D51C5D6FE7B79E33AAE9494DB1 /* DesignableNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF61DB50B6AB7BA14DE6D4BC12A300E8 /* DesignableNavigationBar.swift */; };
-		CA19C0FAB6B1376ACA9CBAFF0620AA80 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B6F038F05F57B9783A1B5E7EBAD2D0 /* DesignableView.swift */; };
 		CF1ABEE703270D6C91CF5DCE64FBBDE4 /* DesignableTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D787AC719FC189C2CDFAB83E532402D7 /* DesignableTextView.swift */; };
 /* End PBXBuildFile section */
 
@@ -60,7 +59,6 @@
 		1B434808DCEC8172D13F4398D583DEC0 /* Pods_AwesomeUIMagic_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AwesomeUIMagic_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2887707BDC2D0038FE132D81456E4B51 /* Pods-AwesomeUIMagic_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AwesomeUIMagic_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		2D05EE791A26F7264B5747FDC40552BB /* Pods-AwesomeUIMagic_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AwesomeUIMagic_Example-umbrella.h"; sourceTree = "<group>"; };
-		39B6F038F05F57B9783A1B5E7EBAD2D0 /* DesignableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
 		4A383A5991720570408E602A7E3DC7BC /* AwesomeUIMagic-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AwesomeUIMagic-dummy.m"; sourceTree = "<group>"; };
 		55768994EC869A573DC251D3834C0363 /* Pods-AwesomeUIMagic_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-AwesomeUIMagic_Example.modulemap"; sourceTree = "<group>"; };
 		577A3911393DAA13E77DE328DA1077E4 /* UIViewExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
@@ -127,7 +125,6 @@
 		0A369AEB202D41C60008B314 /* Old */ = {
 			isa = PBXGroup;
 			children = (
-				39B6F038F05F57B9783A1B5E7EBAD2D0 /* DesignableView.swift */,
 				6FF4A7EB7C5DD6F556F2E2F7FC2293F0 /* DesignableTextField.swift */,
 				CF11CE5ADE53275862A74D86204CDBFD /* DesignableButton.swift */,
 				FF61DB50B6AB7BA14DE6D4BC12A300E8 /* DesignableNavigationBar.swift */,
@@ -373,7 +370,6 @@
 				B66821D51C5D6FE7B79E33AAE9494DB1 /* DesignableNavigationBar.swift in Sources */,
 				681893513461CC060892802E07B611D4 /* DesignableTextField.swift in Sources */,
 				CF1ABEE703270D6C91CF5DCE64FBBDE4 /* DesignableTextView.swift in Sources */,
-				CA19C0FAB6B1376ACA9CBAFF0620AA80 /* DesignableView.swift in Sources */,
 				AB4A4CA23C057E685016606D6BD26D44 /* NSNumberExtensions.swift in Sources */,
 				0A369AF9202D504A0008B314 /* ShadowLayer.swift in Sources */,
 				0A369AF5202D4ED80008B314 /* UIView+Shimmer.swift in Sources */,

@@ -9,8 +9,6 @@ import UIKit
 
 public class ShadowView: UIView {
     
-    open var shadowLayer: ShadowLayer?
-    
     // MARK: - Inspectables
     
     @IBInspectable public var shadowColor: UIColor = UIColor.clear
@@ -32,11 +30,6 @@ public class ShadowView: UIView {
                            shadowOpacity: shadowOpacity,
                            shadowRadius: shadowRadius)
         }
-    }
-    
-    deinit {
-        shadowLayer?.removeFromSuperview()
-        shadowLayer = nil
     }
     
 }
