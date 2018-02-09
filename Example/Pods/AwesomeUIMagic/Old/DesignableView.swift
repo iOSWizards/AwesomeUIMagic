@@ -45,26 +45,6 @@ open class DesignableView: UIView {
         }
     }
     
-    // MARK: - Colors
-    
-    @IBInspectable open var gradientTopColor: UIColor = UIColor.clear {
-        didSet{
-            self.addGradientLayer(gradientTopColor, middle: gradientMiddleColor, bottomColor: gradientBottomColor)
-        }
-    }
-    
-    @IBInspectable open var gradientMiddleColor: UIColor = UIColor.clear {
-        didSet{
-            self.addGradientLayer(gradientTopColor, middle: gradientMiddleColor, bottomColor: gradientBottomColor)
-        }
-    }
-    
-    @IBInspectable open var gradientBottomColor: UIColor = UIColor.clear {
-        didSet{
-            self.addGradientLayer(gradientTopColor, middle: gradientMiddleColor, bottomColor: gradientBottomColor)
-        }
-    }
-    
     @IBInspectable open var shadowColor: UIColor = UIColor.clear {
         didSet{
             updateShadow()
@@ -124,7 +104,6 @@ open class DesignableView: UIView {
     open override func layoutSubviews() {
         super.layoutSubviews()
         
-        addGradientLayer(gradientTopColor, middle: gradientMiddleColor, bottomColor: gradientBottomColor)
         updateShape(shapeType)
         
         if(self.shadowRadius > 0) {

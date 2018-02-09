@@ -11,6 +11,7 @@
 		0A369AE8202D41310008B314 /* ShimmerEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A369AE3202D41310008B314 /* ShimmerEffect.swift */; };
 		0A369AE9202D41310008B314 /* UIView+Magic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A369AE5202D41310008B314 /* UIView+Magic.swift */; };
 		0A369AEA202D41310008B314 /* ObjectAssociation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A369AE6202D41310008B314 /* ObjectAssociation.swift */; };
+		0A369AEE202D47340008B314 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A369AED202D47340008B314 /* GradientView.swift */; };
 		3A6AFA7ABAB126B17973FE75D7915D57 /* DesignableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0A6FCD55B1A059D16EFAD67BE8F964 /* DesignableLabel.swift */; };
 		4299CD3234041EA6B70F5FA4263C4581 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		48202ABC9F268E722081D2EC6DF49266 /* UIViewAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E356A8A2DD8C008C836783A9C3DEE97 /* UIViewAnimations.swift */; };
@@ -46,6 +47,7 @@
 		0A369AE3202D41310008B314 /* ShimmerEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShimmerEffect.swift; sourceTree = "<group>"; };
 		0A369AE5202D41310008B314 /* UIView+Magic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Magic.swift"; sourceTree = "<group>"; };
 		0A369AE6202D41310008B314 /* ObjectAssociation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectAssociation.swift; sourceTree = "<group>"; };
+		0A369AED202D47340008B314 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		0E356A8A2DD8C008C836783A9C3DEE97 /* UIViewAnimations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIViewAnimations.swift; sourceTree = "<group>"; };
 		1319B5BE28035F4A7AE0659038B1F3DD /* Pods-AwesomeUIMagic_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AwesomeUIMagic_Example-frameworks.sh"; sourceTree = "<group>"; };
 		1B434808DCEC8172D13F4398D583DEC0 /* Pods_AwesomeUIMagic_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AwesomeUIMagic_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,12 +109,12 @@
 			path = Shimmer;
 			sourceTree = "<group>";
 		};
-		0A369AE4202D41310008B314 /* Views */ = {
+		0A369AE4202D41310008B314 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				0A369AE5202D41310008B314 /* UIView+Magic.swift */,
 			);
-			path = Views;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		0A369AEB202D41C60008B314 /* Old */ = {
@@ -131,6 +133,14 @@
 				577A3911393DAA13E77DE328DA1077E4 /* UIViewExtensions.swift */,
 			);
 			path = Old;
+			sourceTree = "<group>";
+		};
+		0A369AEC202D47180008B314 /* Gradient */ = {
+			isa = PBXGroup;
+			children = (
+				0A369AED202D47340008B314 /* GradientView.swift */,
+			);
+			path = Gradient;
 			sourceTree = "<group>";
 		};
 		40A5C28BFBFA4B83C0CB524056A09F4E /* Support Files */ = {
@@ -190,7 +200,8 @@
 			children = (
 				0A369AE6202D41310008B314 /* ObjectAssociation.swift */,
 				0A369AE1202D41310008B314 /* Shimmer */,
-				0A369AE4202D41310008B314 /* Views */,
+				0A369AEC202D47180008B314 /* Gradient */,
+				0A369AE4202D41310008B314 /* Extensions */,
 				0A369AEB202D41C60008B314 /* Old */,
 				40A5C28BFBFA4B83C0CB524056A09F4E /* Support Files */,
 			);
@@ -331,6 +342,7 @@
 				84B3A52BA9FA4887507EBE6102CB74F7 /* DesignableButton.swift in Sources */,
 				3A6AFA7ABAB126B17973FE75D7915D57 /* DesignableLabel.swift in Sources */,
 				0A369AE9202D41310008B314 /* UIView+Magic.swift in Sources */,
+				0A369AEE202D47340008B314 /* GradientView.swift in Sources */,
 				0A369AEA202D41310008B314 /* ObjectAssociation.swift in Sources */,
 				B66821D51C5D6FE7B79E33AAE9494DB1 /* DesignableNavigationBar.swift in Sources */,
 				681893513461CC060892802E07B611D4 /* DesignableTextField.swift in Sources */,

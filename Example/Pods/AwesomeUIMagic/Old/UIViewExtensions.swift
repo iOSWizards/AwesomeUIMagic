@@ -10,25 +10,6 @@ import UIKit
 
 extension UIView {
     
-    // MARK: - Gradient
-    
-    public func addGradientLayer(_ topColor: UIColor, middle: UIColor, bottomColor: UIColor){
-        //remove sublayers
-        if let sublayers = layer.sublayers {
-            for sublayer in sublayers {
-                if let gradientLayer = sublayer as? CAGradientLayer {
-                    gradientLayer.removeFromSuperlayer()
-                }
-            }
-        }
-        
-        let gradientLayer = CAGradientLayer()
-        gradientLayer.frame = CGRect(x: 0, y: 0, width: frame.size.width, height: frame.size.height)
-        gradientLayer.colors = [topColor.cgColor, middle.cgColor, bottomColor.cgColor]
-        gradientLayer.locations = [0.0, 0.5, 1.0]
-        layer.insertSublayer(gradientLayer, at: 0)
-    }
-    
     // MARK: - Hexagonal
     
     public func addHexagonalMask(_ rotateAngle: CGFloat){
