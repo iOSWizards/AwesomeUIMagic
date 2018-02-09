@@ -18,7 +18,6 @@
 		4F333EDA94046C51CEED117A4A20DCC1 /* UIBezierPath+Polygon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700E109F5E40F69A5D021F538D19E431 /* UIBezierPath+Polygon.swift */; };
 		57AF5660126E785C8333BC201737F1AA /* Pods-AwesomeUIMagic_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D05EE791A26F7264B5747FDC40552BB /* Pods-AwesomeUIMagic_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		57CA8EFB0E2DFEF8035CA4C0EB9115D1 /* Pods-AwesomeUIMagic_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6866F61F62D44992231E7832827BD039 /* Pods-AwesomeUIMagic_Example-dummy.m */; };
-		5EA5C42876D2E628650BC7B852520BBA /* DesignableProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8507561331CB33552EFBF88E1031D672 /* DesignableProgressView.swift */; };
 		681893513461CC060892802E07B611D4 /* DesignableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF4A7EB7C5DD6F556F2E2F7FC2293F0 /* DesignableTextField.swift */; };
 		84B3A52BA9FA4887507EBE6102CB74F7 /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF11CE5ADE53275862A74D86204CDBFD /* DesignableButton.swift */; };
 		8D5B8FAB54FB172AF7E27DDE58068D38 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
@@ -29,7 +28,6 @@
 		B66821D51C5D6FE7B79E33AAE9494DB1 /* DesignableNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF61DB50B6AB7BA14DE6D4BC12A300E8 /* DesignableNavigationBar.swift */; };
 		CA19C0FAB6B1376ACA9CBAFF0620AA80 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B6F038F05F57B9783A1B5E7EBAD2D0 /* DesignableView.swift */; };
 		CF1ABEE703270D6C91CF5DCE64FBBDE4 /* DesignableTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D787AC719FC189C2CDFAB83E532402D7 /* DesignableTextView.swift */; };
-		F239E2954830A355C20239FF38F1552A /* DesignableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C778F918EC8326E32F2C921F1C90FEED /* DesignableImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,14 +60,12 @@
 		6FF4A7EB7C5DD6F556F2E2F7FC2293F0 /* DesignableTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DesignableTextField.swift; sourceTree = "<group>"; };
 		700E109F5E40F69A5D021F538D19E431 /* UIBezierPath+Polygon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIBezierPath+Polygon.swift"; sourceTree = "<group>"; };
 		7729779F95FBAAD731C7FE1D08C1ABCA /* Pods-AwesomeUIMagic_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AwesomeUIMagic_Example.release.xcconfig"; sourceTree = "<group>"; };
-		8507561331CB33552EFBF88E1031D672 /* DesignableProgressView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DesignableProgressView.swift; sourceTree = "<group>"; };
 		8EE9B07E199B7673D0BAF19BDB61BB26 /* AwesomeUIMagic-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AwesomeUIMagic-prefix.pch"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AED40AAD492ECFF5AF953A32608D504A /* AwesomeUIMagic-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AwesomeUIMagic-umbrella.h"; sourceTree = "<group>"; };
 		B56E324BD52D6B2C01660DAAFD5EFE84 /* Pods-AwesomeUIMagic_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AwesomeUIMagic_Example-resources.sh"; sourceTree = "<group>"; };
 		B572B5EA0388AEBBA8CCA67723197184 /* Pods-AwesomeUIMagic_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AwesomeUIMagic_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		B5F2FC94134B13F49CE695E283162476 /* AwesomeUIMagic.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AwesomeUIMagic.xcconfig; sourceTree = "<group>"; };
-		C778F918EC8326E32F2C921F1C90FEED /* DesignableImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DesignableImageView.swift; sourceTree = "<group>"; };
 		CC825F939893C3D3CE697225E0EAAF5B /* AwesomeUIMagic.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AwesomeUIMagic.modulemap; sourceTree = "<group>"; };
 		CC8A379C6825F0B212D52E2BCC6881EE /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 		CE0A6FCD55B1A059D16EFAD67BE8F964 /* DesignableLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DesignableLabel.swift; sourceTree = "<group>"; };
@@ -124,10 +120,8 @@
 			children = (
 				39B6F038F05F57B9783A1B5E7EBAD2D0 /* DesignableView.swift */,
 				CF11CE5ADE53275862A74D86204CDBFD /* DesignableButton.swift */,
-				C778F918EC8326E32F2C921F1C90FEED /* DesignableImageView.swift */,
 				CE0A6FCD55B1A059D16EFAD67BE8F964 /* DesignableLabel.swift */,
 				FF61DB50B6AB7BA14DE6D4BC12A300E8 /* DesignableNavigationBar.swift */,
-				8507561331CB33552EFBF88E1031D672 /* DesignableProgressView.swift */,
 				6FF4A7EB7C5DD6F556F2E2F7FC2293F0 /* DesignableTextField.swift */,
 				D787AC719FC189C2CDFAB83E532402D7 /* DesignableTextView.swift */,
 				05B935E2012BC272274A0FC1D983EAD0 /* NSNumberExtensions.swift */,
@@ -335,12 +329,10 @@
 				0A369AE8202D41310008B314 /* ShimmerEffect.swift in Sources */,
 				93484AC3108EA2EAABBC6CDB10C3714F /* AwesomeUIMagic-dummy.m in Sources */,
 				84B3A52BA9FA4887507EBE6102CB74F7 /* DesignableButton.swift in Sources */,
-				F239E2954830A355C20239FF38F1552A /* DesignableImageView.swift in Sources */,
 				3A6AFA7ABAB126B17973FE75D7915D57 /* DesignableLabel.swift in Sources */,
 				0A369AE9202D41310008B314 /* UIView+Magic.swift in Sources */,
 				0A369AEA202D41310008B314 /* ObjectAssociation.swift in Sources */,
 				B66821D51C5D6FE7B79E33AAE9494DB1 /* DesignableNavigationBar.swift in Sources */,
-				5EA5C42876D2E628650BC7B852520BBA /* DesignableProgressView.swift in Sources */,
 				681893513461CC060892802E07B611D4 /* DesignableTextField.swift in Sources */,
 				CF1ABEE703270D6C91CF5DCE64FBBDE4 /* DesignableTextView.swift in Sources */,
 				CA19C0FAB6B1376ACA9CBAFF0620AA80 /* DesignableView.swift in Sources */,

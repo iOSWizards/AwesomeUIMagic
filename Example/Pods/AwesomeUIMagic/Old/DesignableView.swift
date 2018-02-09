@@ -45,18 +45,6 @@ open class DesignableView: UIView {
         }
     }
     
-    @IBInspectable open var borderColor: UIColor = UIColor.clear {
-        didSet {
-            layer.borderColor = borderColor.cgColor
-        }
-    }
-    
-    @IBInspectable open var borderWidth: CGFloat = 0 {
-        didSet {
-            layer.borderWidth = borderWidth
-        }
-    }
-    
     // MARK: - Colors
     
     @IBInspectable open var gradientTopColor: UIColor = UIColor.clear {

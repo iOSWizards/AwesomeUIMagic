@@ -11,20 +11,6 @@ import UIKit
 @IBDesignable
 open class DesignableTextField: UITextField {
 
-    // MARK: - Shapes
-    
-    @IBInspectable open var borderColor: UIColor = UIColor.clear {
-        didSet {
-            layer.borderColor = borderColor.cgColor
-        }
-    }
-    
-    @IBInspectable open var borderWidth: CGFloat = 0 {
-        didSet {
-            layer.borderWidth = borderWidth
-        }
-    }
-    
     // MARK: - TextField
     
     @IBInspectable open var insetX: CGFloat = 0

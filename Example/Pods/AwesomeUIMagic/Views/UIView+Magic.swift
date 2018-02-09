@@ -12,9 +12,36 @@ extension UIView {
     
     // MARK: - Associations
     
+    private static let borderColorAssociation = ObjectAssociation<NSObject>()
+    private static let borderWidthAssociation = ObjectAssociation<NSObject>()
     private static let cornerRadiusAssociation = ObjectAssociation<NSObject>()
+    private static let startShimmeringOnLoadAssociation = ObjectAssociation<NSObject>()
     
     // MARK: - Inspectables
+    
+    @IBInspectable
+    public var borderColor: UIColor {
+        get {
+            return UIView.borderColorAssociation[self] as? UIColor ?? .clear
+        }
+        set (borderColor) {
+            UIView.borderColorAssociation[self] = borderColor as NSObject
+            
+            layer.borderColor = borderColor.cgColor
+        }
+    }
+    
+    @IBInspectable
+    public var borderWidth: CGFloat {
+        get {
+            return UIView.borderWidthAssociation[self] as? CGFloat ?? 0
+        }
+        set (borderWidth) {
+            UIView.borderWidthAssociation[self] = borderWidth as NSObject
+            
+            layer.borderWidth = borderWidth
+        }
+    }
     
     @IBInspectable
     public var cornerRadius: CGFloat {
@@ -29,6 +56,20 @@ extension UIView {
         }
     }
     
-    // MARK: - Shimmering Effect
+    @IBInspectable
+    public var startShimmeringOnLoad: Bool {
+        get {
+            return UIView.startShimmeringOnLoadAssociation[self] as? Bool ?? false
+        }
+        set (startShimmeringOnLoad) {
+            UIView.startShimmeringOnLoadAssociation[self] = startShimmeringOnLoad as NSObject
+            
+            if startShimmeringOnLoad {
+                startShimmerAnimation()
+            } else {
+                stopShimmerAnimation()
+            }
+        }
+    }
     
 }

@@ -24,18 +24,5 @@ open class DesignableLabel: UILabel {
         }
     }
     
-    // MARK: - Shapes
-    
-    @IBInspectable open var borderColor: UIColor = UIColor.clear {
-        didSet {
-            layer.borderColor = borderColor.cgColor
-        }
-    }
-    
-    @IBInspectable open var borderWidth: CGFloat = 0 {
-        didSet {
-            layer.borderWidth = borderWidth
-        }
-    }
     
 }

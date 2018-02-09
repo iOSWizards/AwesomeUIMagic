@@ -21,19 +21,7 @@ open class DesignableButton: UIButton {
     
     // MARK: - Shapes
     
-    @IBInspectable open var borderColor: UIColor = UIColor.clear {
-        didSet {
-            layer.borderColor = borderColor.cgColor
-        }
-    }
-    
     @IBInspectable open var selectedBorderColor: UIColor = UIColor.clear
-    
-    @IBInspectable open var borderWidth: CGFloat = 0 {
-        didSet {
-            layer.borderWidth = borderWidth
-        }
-    }
     
     @IBInspectable open var selectedBorderWidth: CGFloat = 0
     
