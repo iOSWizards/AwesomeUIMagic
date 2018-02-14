@@ -21,19 +21,7 @@ open class DesignableButton: UIButton {
     
     // MARK: - Shapes
     
-    @IBInspectable open var borderColor: UIColor = UIColor.clear {
-        didSet {
-            layer.borderColor = borderColor.cgColor
-        }
-    }
-    
     @IBInspectable open var selectedBorderColor: UIColor = UIColor.clear
-    
-    @IBInspectable open var borderWidth: CGFloat = 0 {
-        didSet {
-            layer.borderWidth = borderWidth
-        }
-    }
     
     @IBInspectable open var selectedBorderWidth: CGFloat = 0
     
@@ -46,13 +34,6 @@ open class DesignableButton: UIButton {
     @IBInspectable open var focusedBorderWidth: CGFloat = 0
     
     @IBInspectable open var unfocusedBorderWidth: CGFloat = 0
-    
-    @IBInspectable open var cornerRadius: CGFloat = 0 {
-        didSet {
-            layer.cornerRadius = cornerRadius
-            layer.masksToBounds = true
-        }
-    }
     
     @IBInspectable open var selectedBackgroundColor: UIColor = UIColor.clear
     
@@ -87,26 +68,6 @@ open class DesignableButton: UIButton {
         if focusedBorderWidth != 0 {
             borderWidth = isFocused ? focusedBorderWidth : (isSelected ? selectedBorderWidth : unfocusedBorderWidth)
             layer.borderColor = isFocused ? borderColor.cgColor : isSelected ? selectedBorderColor.cgColor : borderColor.cgColor
-        }
-    }
-    
-    // MARK: - Colors
-    
-    @IBInspectable open var gradientTopColor: UIColor = UIColor.clear {
-        didSet{
-            self.addGradientLayer(gradientTopColor, middle: gradientMiddleColor, bottomColor: gradientBottomColor)
-        }
-    }
-    
-    @IBInspectable open var gradientMiddleColor: UIColor = UIColor.clear {
-        didSet{
-            self.addGradientLayer(gradientTopColor, middle: gradientMiddleColor, bottomColor: gradientBottomColor)
-        }
-    }
-    
-    @IBInspectable open var gradientBottomColor: UIColor = UIColor.clear {
-        didSet{
-            self.addGradientLayer(gradientTopColor, middle: gradientMiddleColor, bottomColor: gradientBottomColor)
         }
     }
     
@@ -146,8 +107,6 @@ open class DesignableButton: UIButton {
     
     open override func layoutSubviews() {
         super.layoutSubviews()
-        
-        addGradientLayer(gradientTopColor, middle: gradientMiddleColor, bottomColor: gradientBottomColor)
         
         if !arrayCorners.isEmpty {
             let maskPath = UIBezierPath(roundedRect: self.bounds, byRoundingCorners: arrayCorners, cornerRadii: CGSize(width: singleCornersRadius, height: singleCornersRadius))

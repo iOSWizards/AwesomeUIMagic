@@ -7,24 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0AC6B73120343B90001E0425 /* ShadowLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC6B71A20343B90001E0425 /* ShadowLayer.swift */; };
-		0AC6B73220343B90001E0425 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC6B71B20343B90001E0425 /* ShadowView.swift */; };
-		0AC6B73320343B90001E0425 /* UIView+Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC6B71C20343B90001E0425 /* UIView+Shadow.swift */; };
-		0AC6B73420343B90001E0425 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC6B71E20343B90001E0425 /* GradientView.swift */; };
-		0AC6B73520343B90001E0425 /* UIView+Layer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC6B72020343B90001E0425 /* UIView+Layer.swift */; };
-		0AC6B73620343B90001E0425 /* ShimmerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC6B72220343B90001E0425 /* ShimmerView.swift */; };
-		0AC6B73720343B90001E0425 /* UIView+Shimmer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC6B72320343B90001E0425 /* UIView+Shimmer.swift */; };
-		0AC6B73820343B90001E0425 /* ShimmerEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC6B72420343B90001E0425 /* ShimmerEffect.swift */; };
-		0AC6B73920343B90001E0425 /* DesignableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC6B72620343B90001E0425 /* DesignableTextField.swift */; };
-		0AC6B73A20343B90001E0425 /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC6B72720343B90001E0425 /* DesignableButton.swift */; };
-		0AC6B73B20343B90001E0425 /* NSNumberExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC6B72820343B90001E0425 /* NSNumberExtensions.swift */; };
-		0AC6B73C20343B90001E0425 /* DesignableNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC6B72920343B90001E0425 /* DesignableNavigationBar.swift */; };
-		0AC6B73D20343B90001E0425 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC6B72A20343B90001E0425 /* UIViewControllerExtensions.swift */; };
-		0AC6B73E20343B90001E0425 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC6B72B20343B90001E0425 /* UIViewExtensions.swift */; };
-		0AC6B73F20343B90001E0425 /* UIViewAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC6B72C20343B90001E0425 /* UIViewAnimations.swift */; };
-		0AC6B74020343B90001E0425 /* DesignableTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC6B72D20343B90001E0425 /* DesignableTextView.swift */; };
-		0AC6B74120343B90001E0425 /* ObjectAssociation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC6B72E20343B90001E0425 /* ObjectAssociation.swift */; };
-		0AC6B74220343B90001E0425 /* UILabel+Formatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC6B73020343B90001E0425 /* UILabel+Formatting.swift */; };
+		0AC6B75B20343C8F001E0425 /* ShadowLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC6B74420343C8E001E0425 /* ShadowLayer.swift */; };
+		0AC6B75C20343C8F001E0425 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC6B74520343C8E001E0425 /* ShadowView.swift */; };
+		0AC6B75D20343C8F001E0425 /* UIView+Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC6B74620343C8E001E0425 /* UIView+Shadow.swift */; };
+		0AC6B75E20343C8F001E0425 /* ObjectAssociation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC6B74720343C8E001E0425 /* ObjectAssociation.swift */; };
+		0AC6B75F20343C8F001E0425 /* UIView+Layer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC6B74920343C8E001E0425 /* UIView+Layer.swift */; };
+		0AC6B76020343C8F001E0425 /* DesignableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC6B74B20343C8F001E0425 /* DesignableTextField.swift */; };
+		0AC6B76120343C8F001E0425 /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC6B74C20343C8F001E0425 /* DesignableButton.swift */; };
+		0AC6B76220343C8F001E0425 /* NSNumberExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC6B74D20343C8F001E0425 /* NSNumberExtensions.swift */; };
+		0AC6B76320343C8F001E0425 /* DesignableNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC6B74E20343C8F001E0425 /* DesignableNavigationBar.swift */; };
+		0AC6B76420343C8F001E0425 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC6B74F20343C8F001E0425 /* UIViewControllerExtensions.swift */; };
+		0AC6B76520343C8F001E0425 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC6B75020343C8F001E0425 /* UIViewExtensions.swift */; };
+		0AC6B76620343C8F001E0425 /* UIViewAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC6B75120343C8F001E0425 /* UIViewAnimations.swift */; };
+		0AC6B76720343C8F001E0425 /* DesignableTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC6B75220343C8F001E0425 /* DesignableTextView.swift */; };
+		0AC6B76820343C8F001E0425 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC6B75420343C8F001E0425 /* GradientView.swift */; };
+		0AC6B76920343C8F001E0425 /* ShimmerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC6B75620343C8F001E0425 /* ShimmerView.swift */; };
+		0AC6B76A20343C8F001E0425 /* UIView+Shimmer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC6B75720343C8F001E0425 /* UIView+Shimmer.swift */; };
+		0AC6B76B20343C8F001E0425 /* ShimmerEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC6B75820343C8F001E0425 /* ShimmerEffect.swift */; };
+		0AC6B76C20343C8F001E0425 /* UILabel+Formatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC6B75A20343C8F001E0425 /* UILabel+Formatting.swift */; };
 		4299CD3234041EA6B70F5FA4263C4581 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		48F255C3D80763E5E8635500420FE545 /* AwesomeUIMagic-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AED40AAD492ECFF5AF953A32608D504A /* AwesomeUIMagic-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		57AF5660126E785C8333BC201737F1AA /* Pods-AwesomeUIMagic_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D05EE791A26F7264B5747FDC40552BB /* Pods-AwesomeUIMagic_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -44,24 +44,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0AC6B71A20343B90001E0425 /* ShadowLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowLayer.swift; sourceTree = "<group>"; };
-		0AC6B71B20343B90001E0425 /* ShadowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
-		0AC6B71C20343B90001E0425 /* UIView+Shadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Shadow.swift"; sourceTree = "<group>"; };
-		0AC6B71E20343B90001E0425 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
-		0AC6B72020343B90001E0425 /* UIView+Layer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Layer.swift"; sourceTree = "<group>"; };
-		0AC6B72220343B90001E0425 /* ShimmerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShimmerView.swift; sourceTree = "<group>"; };
-		0AC6B72320343B90001E0425 /* UIView+Shimmer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Shimmer.swift"; sourceTree = "<group>"; };
-		0AC6B72420343B90001E0425 /* ShimmerEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShimmerEffect.swift; sourceTree = "<group>"; };
-		0AC6B72620343B90001E0425 /* DesignableTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableTextField.swift; sourceTree = "<group>"; };
-		0AC6B72720343B90001E0425 /* DesignableButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
-		0AC6B72820343B90001E0425 /* NSNumberExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSNumberExtensions.swift; sourceTree = "<group>"; };
-		0AC6B72920343B90001E0425 /* DesignableNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableNavigationBar.swift; sourceTree = "<group>"; };
-		0AC6B72A20343B90001E0425 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
-		0AC6B72B20343B90001E0425 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
-		0AC6B72C20343B90001E0425 /* UIViewAnimations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewAnimations.swift; sourceTree = "<group>"; };
-		0AC6B72D20343B90001E0425 /* DesignableTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableTextView.swift; sourceTree = "<group>"; };
-		0AC6B72E20343B90001E0425 /* ObjectAssociation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ObjectAssociation.swift; path = AwesomeUIMagic/Classes/ObjectAssociation.swift; sourceTree = "<group>"; };
-		0AC6B73020343B90001E0425 /* UILabel+Formatting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Formatting.swift"; sourceTree = "<group>"; };
+		0AC6B74420343C8E001E0425 /* ShadowLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowLayer.swift; sourceTree = "<group>"; };
+		0AC6B74520343C8E001E0425 /* ShadowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
+		0AC6B74620343C8E001E0425 /* UIView+Shadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Shadow.swift"; sourceTree = "<group>"; };
+		0AC6B74720343C8E001E0425 /* ObjectAssociation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ObjectAssociation.swift; path = ../../../AwesomeUIMagic/Classes/ObjectAssociation.swift; sourceTree = "<group>"; };
+		0AC6B74920343C8E001E0425 /* UIView+Layer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Layer.swift"; sourceTree = "<group>"; };
+		0AC6B74B20343C8F001E0425 /* DesignableTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableTextField.swift; sourceTree = "<group>"; };
+		0AC6B74C20343C8F001E0425 /* DesignableButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
+		0AC6B74D20343C8F001E0425 /* NSNumberExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSNumberExtensions.swift; sourceTree = "<group>"; };
+		0AC6B74E20343C8F001E0425 /* DesignableNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableNavigationBar.swift; sourceTree = "<group>"; };
+		0AC6B74F20343C8F001E0425 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
+		0AC6B75020343C8F001E0425 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		0AC6B75120343C8F001E0425 /* UIViewAnimations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewAnimations.swift; sourceTree = "<group>"; };
+		0AC6B75220343C8F001E0425 /* DesignableTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableTextView.swift; sourceTree = "<group>"; };
+		0AC6B75420343C8F001E0425 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		0AC6B75620343C8F001E0425 /* ShimmerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShimmerView.swift; sourceTree = "<group>"; };
+		0AC6B75720343C8F001E0425 /* UIView+Shimmer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Shimmer.swift"; sourceTree = "<group>"; };
+		0AC6B75820343C8F001E0425 /* ShimmerEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShimmerEffect.swift; sourceTree = "<group>"; };
+		0AC6B75A20343C8F001E0425 /* UILabel+Formatting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Formatting.swift"; sourceTree = "<group>"; };
 		1319B5BE28035F4A7AE0659038B1F3DD /* Pods-AwesomeUIMagic_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AwesomeUIMagic_Example-frameworks.sh"; sourceTree = "<group>"; };
 		1B434808DCEC8172D13F4398D583DEC0 /* Pods_AwesomeUIMagic_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AwesomeUIMagic_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2887707BDC2D0038FE132D81456E4B51 /* Pods-AwesomeUIMagic_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AwesomeUIMagic_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -104,69 +104,69 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0AC6B71920343B90001E0425 /* Shadow */ = {
+		0AC6B74320343C8E001E0425 /* Shadow */ = {
 			isa = PBXGroup;
 			children = (
-				0AC6B71A20343B90001E0425 /* ShadowLayer.swift */,
-				0AC6B71B20343B90001E0425 /* ShadowView.swift */,
-				0AC6B71C20343B90001E0425 /* UIView+Shadow.swift */,
+				0AC6B74420343C8E001E0425 /* ShadowLayer.swift */,
+				0AC6B74520343C8E001E0425 /* ShadowView.swift */,
+				0AC6B74620343C8E001E0425 /* UIView+Shadow.swift */,
 			);
 			name = Shadow;
-			path = AwesomeUIMagic/Classes/Shadow;
+			path = ../../../AwesomeUIMagic/Classes/Shadow;
 			sourceTree = "<group>";
 		};
-		0AC6B71D20343B90001E0425 /* Gradient */ = {
+		0AC6B74820343C8E001E0425 /* Layer */ = {
 			isa = PBXGroup;
 			children = (
-				0AC6B71E20343B90001E0425 /* GradientView.swift */,
-			);
-			name = Gradient;
-			path = AwesomeUIMagic/Classes/Gradient;
-			sourceTree = "<group>";
-		};
-		0AC6B71F20343B90001E0425 /* Layer */ = {
-			isa = PBXGroup;
-			children = (
-				0AC6B72020343B90001E0425 /* UIView+Layer.swift */,
+				0AC6B74920343C8E001E0425 /* UIView+Layer.swift */,
 			);
 			name = Layer;
-			path = AwesomeUIMagic/Classes/Layer;
+			path = ../../../AwesomeUIMagic/Classes/Layer;
 			sourceTree = "<group>";
 		};
-		0AC6B72120343B90001E0425 /* Shimmer */ = {
+		0AC6B74A20343C8F001E0425 /* Old */ = {
 			isa = PBXGroup;
 			children = (
-				0AC6B72220343B90001E0425 /* ShimmerView.swift */,
-				0AC6B72320343B90001E0425 /* UIView+Shimmer.swift */,
-				0AC6B72420343B90001E0425 /* ShimmerEffect.swift */,
-			);
-			name = Shimmer;
-			path = AwesomeUIMagic/Classes/Shimmer;
-			sourceTree = "<group>";
-		};
-		0AC6B72520343B90001E0425 /* Old */ = {
-			isa = PBXGroup;
-			children = (
-				0AC6B72620343B90001E0425 /* DesignableTextField.swift */,
-				0AC6B72720343B90001E0425 /* DesignableButton.swift */,
-				0AC6B72820343B90001E0425 /* NSNumberExtensions.swift */,
-				0AC6B72920343B90001E0425 /* DesignableNavigationBar.swift */,
-				0AC6B72A20343B90001E0425 /* UIViewControllerExtensions.swift */,
-				0AC6B72B20343B90001E0425 /* UIViewExtensions.swift */,
-				0AC6B72C20343B90001E0425 /* UIViewAnimations.swift */,
-				0AC6B72D20343B90001E0425 /* DesignableTextView.swift */,
+				0AC6B74B20343C8F001E0425 /* DesignableTextField.swift */,
+				0AC6B74C20343C8F001E0425 /* DesignableButton.swift */,
+				0AC6B74D20343C8F001E0425 /* NSNumberExtensions.swift */,
+				0AC6B74E20343C8F001E0425 /* DesignableNavigationBar.swift */,
+				0AC6B74F20343C8F001E0425 /* UIViewControllerExtensions.swift */,
+				0AC6B75020343C8F001E0425 /* UIViewExtensions.swift */,
+				0AC6B75120343C8F001E0425 /* UIViewAnimations.swift */,
+				0AC6B75220343C8F001E0425 /* DesignableTextView.swift */,
 			);
 			name = Old;
-			path = AwesomeUIMagic/Classes/Old;
+			path = ../../../AwesomeUIMagic/Classes/Old;
 			sourceTree = "<group>";
 		};
-		0AC6B72F20343B90001E0425 /* Formatting */ = {
+		0AC6B75320343C8F001E0425 /* Gradient */ = {
 			isa = PBXGroup;
 			children = (
-				0AC6B73020343B90001E0425 /* UILabel+Formatting.swift */,
+				0AC6B75420343C8F001E0425 /* GradientView.swift */,
+			);
+			name = Gradient;
+			path = ../../../AwesomeUIMagic/Classes/Gradient;
+			sourceTree = "<group>";
+		};
+		0AC6B75520343C8F001E0425 /* Shimmer */ = {
+			isa = PBXGroup;
+			children = (
+				0AC6B75620343C8F001E0425 /* ShimmerView.swift */,
+				0AC6B75720343C8F001E0425 /* UIView+Shimmer.swift */,
+				0AC6B75820343C8F001E0425 /* ShimmerEffect.swift */,
+			);
+			name = Shimmer;
+			path = ../../../AwesomeUIMagic/Classes/Shimmer;
+			sourceTree = "<group>";
+		};
+		0AC6B75920343C8F001E0425 /* Formatting */ = {
+			isa = PBXGroup;
+			children = (
+				0AC6B75A20343C8F001E0425 /* UILabel+Formatting.swift */,
 			);
 			name = Formatting;
-			path = AwesomeUIMagic/Classes/Formatting;
+			path = ../../../AwesomeUIMagic/Classes/Formatting;
 			sourceTree = "<group>";
 		};
 		40A5C28BFBFA4B83C0CB524056A09F4E /* Support Files */ = {
@@ -224,13 +224,13 @@
 		A91B04255B9947D6C66FDDE9BDB57905 /* AwesomeUIMagic */ = {
 			isa = PBXGroup;
 			children = (
-				0AC6B72E20343B90001E0425 /* ObjectAssociation.swift */,
-				0AC6B72F20343B90001E0425 /* Formatting */,
-				0AC6B71D20343B90001E0425 /* Gradient */,
-				0AC6B71F20343B90001E0425 /* Layer */,
-				0AC6B71920343B90001E0425 /* Shadow */,
-				0AC6B72120343B90001E0425 /* Shimmer */,
-				0AC6B72520343B90001E0425 /* Old */,
+				0AC6B74720343C8E001E0425 /* ObjectAssociation.swift */,
+				0AC6B75920343C8F001E0425 /* Formatting */,
+				0AC6B75320343C8F001E0425 /* Gradient */,
+				0AC6B74820343C8E001E0425 /* Layer */,
+				0AC6B74A20343C8F001E0425 /* Old */,
+				0AC6B74320343C8E001E0425 /* Shadow */,
+				0AC6B75520343C8F001E0425 /* Shimmer */,
 				40A5C28BFBFA4B83C0CB524056A09F4E /* Support Files */,
 			);
 			path = AwesomeUIMagic;
@@ -370,25 +370,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AC6B73720343B90001E0425 /* UIView+Shimmer.swift in Sources */,
-				0AC6B73E20343B90001E0425 /* UIViewExtensions.swift in Sources */,
-				0AC6B73320343B90001E0425 /* UIView+Shadow.swift in Sources */,
-				0AC6B74020343B90001E0425 /* DesignableTextView.swift in Sources */,
-				0AC6B73220343B90001E0425 /* ShadowView.swift in Sources */,
-				0AC6B73420343B90001E0425 /* GradientView.swift in Sources */,
-				0AC6B74120343B90001E0425 /* ObjectAssociation.swift in Sources */,
-				0AC6B74220343B90001E0425 /* UILabel+Formatting.swift in Sources */,
-				0AC6B73C20343B90001E0425 /* DesignableNavigationBar.swift in Sources */,
-				0AC6B73A20343B90001E0425 /* DesignableButton.swift in Sources */,
-				0AC6B73D20343B90001E0425 /* UIViewControllerExtensions.swift in Sources */,
-				0AC6B73B20343B90001E0425 /* NSNumberExtensions.swift in Sources */,
-				0AC6B73620343B90001E0425 /* ShimmerView.swift in Sources */,
+				0AC6B75D20343C8F001E0425 /* UIView+Shadow.swift in Sources */,
+				0AC6B76420343C8F001E0425 /* UIViewControllerExtensions.swift in Sources */,
+				0AC6B76820343C8F001E0425 /* GradientView.swift in Sources */,
+				0AC6B75C20343C8F001E0425 /* ShadowView.swift in Sources */,
+				0AC6B76720343C8F001E0425 /* DesignableTextView.swift in Sources */,
+				0AC6B75E20343C8F001E0425 /* ObjectAssociation.swift in Sources */,
+				0AC6B76120343C8F001E0425 /* DesignableButton.swift in Sources */,
+				0AC6B76C20343C8F001E0425 /* UILabel+Formatting.swift in Sources */,
+				0AC6B76020343C8F001E0425 /* DesignableTextField.swift in Sources */,
+				0AC6B76320343C8F001E0425 /* DesignableNavigationBar.swift in Sources */,
+				0AC6B76220343C8F001E0425 /* NSNumberExtensions.swift in Sources */,
 				93484AC3108EA2EAABBC6CDB10C3714F /* AwesomeUIMagic-dummy.m in Sources */,
-				0AC6B73520343B90001E0425 /* UIView+Layer.swift in Sources */,
-				0AC6B73920343B90001E0425 /* DesignableTextField.swift in Sources */,
-				0AC6B73F20343B90001E0425 /* UIViewAnimations.swift in Sources */,
-				0AC6B73820343B90001E0425 /* ShimmerEffect.swift in Sources */,
-				0AC6B73120343B90001E0425 /* ShadowLayer.swift in Sources */,
+				0AC6B75F20343C8F001E0425 /* UIView+Layer.swift in Sources */,
+				0AC6B76920343C8F001E0425 /* ShimmerView.swift in Sources */,
+				0AC6B76620343C8F001E0425 /* UIViewAnimations.swift in Sources */,
+				0AC6B76520343C8F001E0425 /* UIViewExtensions.swift in Sources */,
+				0AC6B76A20343C8F001E0425 /* UIView+Shimmer.swift in Sources */,
+				0AC6B76B20343C8F001E0425 /* ShimmerEffect.swift in Sources */,
+				0AC6B75B20343C8F001E0425 /* ShadowLayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

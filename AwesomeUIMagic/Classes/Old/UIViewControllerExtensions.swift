@@ -12,7 +12,7 @@ extension UIViewController {
     
     public func showAlert(withTitle title: String? = nil, message: String?,  completion: (() -> ())? = nil, buttons: (UIAlertActionStyle, String, (() -> ())?)...) {
         
-        guard let message = message, message.characters.count > 0 else {
+        guard let message = message, message.count > 0 else {
             return
         }
         
