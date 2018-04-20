@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="7qQ-YH-hYf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="7qQ-YH-hYf">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -55,10 +56,12 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LLi-Y1-bQ0" customClass="ShadowView" customModule="AwesomeUIMagic">
-                                <rect key="frame" x="67" y="84" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LLi-Y1-bQ0" customClass="ShadowView" customModule="AwesomeUIMagic">
+                                <rect key="frame" x="67" y="84" width="241" height="128"/>
                                 <color key="backgroundColor" red="0.16300708059999999" green="0.55229490999999997" blue="0.98933833839999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="9bq-RL-W7G"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
                                         <color key="value" red="0.068498931829999998" green="0.74838536980000003" blue="0.53717249629999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -77,6 +80,11 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="LLi-Y1-bQ0" firstAttribute="top" secondItem="GX4-WP-41f" secondAttribute="bottom" constant="64" id="0aB-Md-I20"/>
+                            <constraint firstItem="LLi-Y1-bQ0" firstAttribute="leading" secondItem="PDS-Rf-bvI" secondAttribute="leadingMargin" constant="51" id="bG4-fm-y8U"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="LLi-Y1-bQ0" secondAttribute="trailing" constant="51" id="sCv-3r-c7i"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G50-aL-Tc2" userLabel="First Responder" sceneMemberID="firstResponder"/>
