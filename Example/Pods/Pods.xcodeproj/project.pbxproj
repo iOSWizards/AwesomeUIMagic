@@ -21,9 +21,6 @@
 		0AC6B76620343C8F001E0425 /* UIViewAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC6B75120343C8F001E0425 /* UIViewAnimations.swift */; };
 		0AC6B76720343C8F001E0425 /* DesignableTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC6B75220343C8F001E0425 /* DesignableTextView.swift */; };
 		0AC6B76820343C8F001E0425 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC6B75420343C8F001E0425 /* GradientView.swift */; };
-		0AC6B76920343C8F001E0425 /* ShimmerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC6B75620343C8F001E0425 /* ShimmerView.swift */; };
-		0AC6B76A20343C8F001E0425 /* UIView+Shimmer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC6B75720343C8F001E0425 /* UIView+Shimmer.swift */; };
-		0AC6B76B20343C8F001E0425 /* ShimmerEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC6B75820343C8F001E0425 /* ShimmerEffect.swift */; };
 		0AC6B76C20343C8F001E0425 /* UILabel+Formatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC6B75A20343C8F001E0425 /* UILabel+Formatting.swift */; };
 		4299CD3234041EA6B70F5FA4263C4581 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		48F255C3D80763E5E8635500420FE545 /* AwesomeUIMagic-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AED40AAD492ECFF5AF953A32608D504A /* AwesomeUIMagic-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -58,9 +55,6 @@
 		0AC6B75120343C8F001E0425 /* UIViewAnimations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewAnimations.swift; sourceTree = "<group>"; };
 		0AC6B75220343C8F001E0425 /* DesignableTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableTextView.swift; sourceTree = "<group>"; };
 		0AC6B75420343C8F001E0425 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
-		0AC6B75620343C8F001E0425 /* ShimmerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShimmerView.swift; sourceTree = "<group>"; };
-		0AC6B75720343C8F001E0425 /* UIView+Shimmer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Shimmer.swift"; sourceTree = "<group>"; };
-		0AC6B75820343C8F001E0425 /* ShimmerEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShimmerEffect.swift; sourceTree = "<group>"; };
 		0AC6B75A20343C8F001E0425 /* UILabel+Formatting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Formatting.swift"; sourceTree = "<group>"; };
 		1319B5BE28035F4A7AE0659038B1F3DD /* Pods-AwesomeUIMagic_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AwesomeUIMagic_Example-frameworks.sh"; sourceTree = "<group>"; };
 		1B434808DCEC8172D13F4398D583DEC0 /* Pods_AwesomeUIMagic_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AwesomeUIMagic_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -149,17 +143,6 @@
 			path = ../../../AwesomeUIMagic/Classes/Gradient;
 			sourceTree = "<group>";
 		};
-		0AC6B75520343C8F001E0425 /* Shimmer */ = {
-			isa = PBXGroup;
-			children = (
-				0AC6B75620343C8F001E0425 /* ShimmerView.swift */,
-				0AC6B75720343C8F001E0425 /* UIView+Shimmer.swift */,
-				0AC6B75820343C8F001E0425 /* ShimmerEffect.swift */,
-			);
-			name = Shimmer;
-			path = ../../../AwesomeUIMagic/Classes/Shimmer;
-			sourceTree = "<group>";
-		};
 		0AC6B75920343C8F001E0425 /* Formatting */ = {
 			isa = PBXGroup;
 			children = (
@@ -230,7 +213,6 @@
 				0AC6B74820343C8E001E0425 /* Layer */,
 				0AC6B74A20343C8F001E0425 /* Old */,
 				0AC6B74320343C8E001E0425 /* Shadow */,
-				0AC6B75520343C8F001E0425 /* Shimmer */,
 				40A5C28BFBFA4B83C0CB524056A09F4E /* Support Files */,
 			);
 			path = AwesomeUIMagic;
@@ -383,11 +365,8 @@
 				0AC6B76220343C8F001E0425 /* NSNumberExtensions.swift in Sources */,
 				93484AC3108EA2EAABBC6CDB10C3714F /* AwesomeUIMagic-dummy.m in Sources */,
 				0AC6B75F20343C8F001E0425 /* UIView+Layer.swift in Sources */,
-				0AC6B76920343C8F001E0425 /* ShimmerView.swift in Sources */,
 				0AC6B76620343C8F001E0425 /* UIViewAnimations.swift in Sources */,
 				0AC6B76520343C8F001E0425 /* UIViewExtensions.swift in Sources */,
-				0AC6B76A20343C8F001E0425 /* UIView+Shimmer.swift in Sources */,
-				0AC6B76B20343C8F001E0425 /* ShimmerEffect.swift in Sources */,
 				0AC6B75B20343C8F001E0425 /* ShadowLayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
