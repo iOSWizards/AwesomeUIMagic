@@ -10,8 +10,8 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
-- iOS 9 or Higher
-- Swift 4
+- iOS 10 or Higher
+- Swift 4.2
 
 ## Installation
 
@@ -19,7 +19,7 @@ AwesomeUIMagic is available through [CocoaPods](http://cocoapods.org). To instal
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'AwesomeUIMagic', git: 'https://github.com/iOSWizards/AwesomeUIMagic', tag: '0.4.7'
+pod 'AwesomeUIMagic', git: 'https://github.com/iOSWizards/AwesomeUIMagic', tag: '0.4.8'
 ```
 
 ## Usage

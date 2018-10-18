@@ -29,7 +29,7 @@ open class DesignableTextField: UITextField {
     @IBInspectable open var placeholderColor: UIColor = UIColor.white {
         didSet {
             if let placeholder = placeholder {
-                attributedPlaceholder = NSAttributedString(string: placeholder, attributes: [NSAttributedStringKey.foregroundColor: placeholderColor])
+                attributedPlaceholder = NSAttributedString(string: placeholder, attributes: [NSAttributedString.Key.foregroundColor: placeholderColor])
             }
         }
     }

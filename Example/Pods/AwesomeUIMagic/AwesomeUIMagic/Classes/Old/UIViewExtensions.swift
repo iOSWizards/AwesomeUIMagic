@@ -41,7 +41,7 @@ extension UIView {
     
     // MARK: - Blur effect
     
-    public func addBluredBackground(style: UIBlurEffectStyle = .dark) {
+    public func addBluredBackground(style: UIBlurEffect.Style = .dark) {
         for view in subviews {
             if view is UIVisualEffectView {
                 view.removeFromSuperview()

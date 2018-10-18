@@ -15,7 +15,7 @@ open class DesignableTextView: UITextView {
         static let defaultiOSPlaceholderColor = UIColor(red: 0.0, green: 0.0, blue: 0.0980392, alpha: 0.22)
     }
     
-    open let placeholderLabel: UILabel = UILabel()
+    public let placeholderLabel: UILabel = UILabel()
     
     private var placeholderLabelConstraints = [NSLayoutConstraint]()
     
@@ -83,9 +83,9 @@ open class DesignableTextView: UITextView {
     private func commonInit() {
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(textDidChange),
-                                               name: NSNotification.Name.UITextViewTextDidChange,
+                                               name: UITextView.textDidChangeNotification,
                                                object: nil)
-
+        
         placeholderLabel.font = font
         placeholderLabel.textColor = placeholderColor
         placeholderLabel.textAlignment = textAlignment
@@ -131,7 +131,7 @@ open class DesignableTextView: UITextView {
     
     deinit {
         NotificationCenter.default.removeObserver(self,
-                                                  name: NSNotification.Name.UITextViewTextDidChange,
+                                                  name: UITextView.textDidChangeNotification,
                                                   object: nil)
     }
     

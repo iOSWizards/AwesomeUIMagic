@@ -40,7 +40,7 @@ extension ShimmerEffect {
         shimmerAnimation.fromValue = startLocations
         shimmerAnimation.toValue = endLocations
         shimmerAnimation.duration = animationDuration
-        shimmerAnimation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+        shimmerAnimation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
         
         let animationGroup = CAAnimationGroup()
         animationGroup.duration = animationDuration + animationDelay
