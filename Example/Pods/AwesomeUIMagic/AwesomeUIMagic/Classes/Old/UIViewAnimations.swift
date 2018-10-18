@@ -195,7 +195,7 @@ extension UIView{
     
     public func animateShakeUpDown(duration: Double = 0.17) {
         let shake = CAKeyframeAnimation(keyPath: "transform.translation.y")
-        shake.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionLinear)
+        shake.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.linear)
         shake.duration = 0.17
         shake.values = [-20.0, 20.0, 0.0]
         self.layer.add(shake, forKey: "AwesomeMagicUIShakeUpDown")

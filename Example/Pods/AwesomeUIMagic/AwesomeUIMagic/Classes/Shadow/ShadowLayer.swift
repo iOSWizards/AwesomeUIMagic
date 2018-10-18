@@ -75,7 +75,7 @@ extension UIView {
                                   shadowRadius: self.layer.cornerRadius > 0 ? self.layer.cornerRadius/2 : shadowRadius)
         
         superview?.addSubview(shadowLayer)
-        superview?.bringSubview(toFront: self)
+        superview?.bringSubviewToFront(self)
         
         shadowLayer.updateLayout()
     }

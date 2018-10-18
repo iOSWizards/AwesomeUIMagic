@@ -83,7 +83,7 @@ open class DesignableTextView: UITextView {
     private func commonInit() {
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(textDidChange),
-                                               name: NSNotification.Name.UITextViewTextDidChange,
+                                               name: UITextView.textDidChangeNotification,
                                                object: nil)
 
         placeholderLabel.font = font
@@ -131,7 +131,7 @@ open class DesignableTextView: UITextView {
     
     deinit {
         NotificationCenter.default.removeObserver(self,
-                                                  name: NSNotification.Name.UITextViewTextDidChange,
+                                                  name: UITextView.textDidChangeNotification,
                                                   object: nil)
     }
     

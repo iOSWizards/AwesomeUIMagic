@@ -143,7 +143,7 @@ open class DesignableButton: UIButton {
             shadowLayer!.clipsToBounds = false
             
             self.superview?.addSubview(shadowLayer!)
-            self.superview?.bringSubview(toFront: self)
+            self.superview?.bringSubviewToFront(self)
             
         }
     }
