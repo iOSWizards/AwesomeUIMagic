@@ -54,7 +54,6 @@ final class LinearGradientLayer: CALayer {
         guard let colors = colors, let gradient = CGGradient(colorsSpace: colorSpace,
                                                              colors: colors as CFArray, locations: locations) else { return }
         
-        
         let points = direction.points
         ctx.drawLinearGradient(
             gradient,
