@@ -24,8 +24,8 @@
 		8D5B8FAB54FB172AF7E27DDE58068D38 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		99DB24F0DCC5925849E448C53A992DAA /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F086989D0845B0114FBA5DA88758821 /* DesignableButton.swift */; };
 		9FDC5A5EFA01D2146364F0FD04081E68 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6B7A6563E8AA935C85703AD2541CB6 /* UIViewControllerExtensions.swift */; };
-		A76A2D9E2216633100578737 /* CustomGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76A2D9D2216633000578737 /* CustomGradientView.swift */; };
-		A76A2DA0221663C700578737 /* LinearGradientLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76A2D9F221663C700578737 /* LinearGradientLayer.swift */; };
+		A72DD9B2221A874A003C1BA5 /* CustomGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72DD9B1221A8749003C1BA5 /* CustomGradientView.swift */; };
+		A72DD9B4221A8767003C1BA5 /* LinearGradientLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72DD9B3221A8767003C1BA5 /* LinearGradientLayer.swift */; };
 		AF87F9E4F98CFB68F5BEFEAE3923B317 /* ShimmerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A18FC96EE4440FBA55E1FECAC694A5 /* ShimmerView.swift */; };
 		B7EF867AAA9D0610A212EEBEBC78562C /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D92C0C807548A4B96EB34B897C3CA9 /* GradientView.swift */; };
 		B92C457A6283BDA1F7265EF95E3695C5 /* ShadowLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A0FC317A6396F480F00BDFF0319FF3 /* ShadowLayer.swift */; };
@@ -70,8 +70,8 @@
 		99F47DD9EFF3D1832192570E5A84AD7C /* AwesomeUIMagic-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AwesomeUIMagic-umbrella.h"; sourceTree = "<group>"; };
 		A3A0FC317A6396F480F00BDFF0319FF3 /* ShadowLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShadowLayer.swift; path = AwesomeUIMagic/Classes/Shadow/ShadowLayer.swift; sourceTree = "<group>"; };
 		A4A18FC96EE4440FBA55E1FECAC694A5 /* ShimmerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShimmerView.swift; path = AwesomeUIMagic/Classes/Shimmer/ShimmerView.swift; sourceTree = "<group>"; };
-		A76A2D9D2216633000578737 /* CustomGradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomGradientView.swift; path = AwesomeUIMagic/Classes/Gradient/CustomGradientView.swift; sourceTree = "<group>"; };
-		A76A2D9F221663C700578737 /* LinearGradientLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LinearGradientLayer.swift; path = AwesomeUIMagic/Classes/Layer/LinearGradientLayer.swift; sourceTree = "<group>"; };
+		A72DD9B1221A8749003C1BA5 /* CustomGradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomGradientView.swift; path = ../../../AwesomeUIMagic/Classes/Gradient/CustomGradientView.swift; sourceTree = "<group>"; };
+		A72DD9B3221A8767003C1BA5 /* LinearGradientLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LinearGradientLayer.swift; path = ../../../AwesomeUIMagic/Classes/Layer/LinearGradientLayer.swift; sourceTree = "<group>"; };
 		AD95A47CF40A1B96BAD8E0E846D88F14 /* UIView+Shadow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Shadow.swift"; path = "AwesomeUIMagic/Classes/Shadow/UIView+Shadow.swift"; sourceTree = "<group>"; };
 		B6CB6D9D83A8395457E60FF47FEE6CBB /* AwesomeUIMagic.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AwesomeUIMagic.xcconfig; sourceTree = "<group>"; };
 		B7FA5151D418CE7185672A87F57E8D8C /* ShimmerEffect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShimmerEffect.swift; path = AwesomeUIMagic/Classes/Shimmer/ShimmerEffect.swift; sourceTree = "<group>"; };
@@ -157,8 +157,8 @@
 		98A5449EAC6A2393B96938D098DC443E /* AwesomeUIMagic */ = {
 			isa = PBXGroup;
 			children = (
-				A76A2D9F221663C700578737 /* LinearGradientLayer.swift */,
-				A76A2D9D2216633000578737 /* CustomGradientView.swift */,
+				A72DD9B3221A8767003C1BA5 /* LinearGradientLayer.swift */,
+				A72DD9B1221A8749003C1BA5 /* CustomGradientView.swift */,
 				8F086989D0845B0114FBA5DA88758821 /* DesignableButton.swift */,
 				84128B19733540462F9C70320991DBAB /* DesignableNavigationBar.swift */,
 				759D1FCD71B8B900BC194F9D026DB998 /* DesignableTextField.swift */,
@@ -319,10 +319,9 @@
 			files = (
 				434F2B0AF8297B8211CE6A86DCBEC3F6 /* AwesomeUIMagic-dummy.m in Sources */,
 				99DB24F0DCC5925849E448C53A992DAA /* DesignableButton.swift in Sources */,
-				A76A2D9E2216633100578737 /* CustomGradientView.swift in Sources */,
 				87E7CBD8F396E50E512DCE2F6FA21B32 /* DesignableNavigationBar.swift in Sources */,
-				A76A2DA0221663C700578737 /* LinearGradientLayer.swift in Sources */,
 				6EA71EA0F2BEE26D97124E38D5B32AF2 /* DesignableTextField.swift in Sources */,
+				A72DD9B4221A8767003C1BA5 /* LinearGradientLayer.swift in Sources */,
 				09D793E604F077F0E49A0FE4BC5E1754 /* DesignableTextView.swift in Sources */,
 				B7EF867AAA9D0610A212EEBEBC78562C /* GradientView.swift in Sources */,
 				FAE6C5A9C80A3A347953CECB807A0ACA /* NSNumberExtensions.swift in Sources */,
@@ -338,6 +337,7 @@
 				286A4C6D30C36BFEE3732ACEC715307E /* UIViewAnimations.swift in Sources */,
 				9FDC5A5EFA01D2146364F0FD04081E68 /* UIViewControllerExtensions.swift in Sources */,
 				1786896D3B9B6AB89D099A5D86F98D53 /* UIViewExtensions.swift in Sources */,
+				A72DD9B2221A874A003C1BA5 /* CustomGradientView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
