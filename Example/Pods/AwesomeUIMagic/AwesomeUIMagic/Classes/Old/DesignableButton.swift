@@ -148,4 +148,61 @@ open class DesignableButton: UIButton {
         }
     }
     
+    // MARK: - Gradient
+    var gradientSet = false
+    var gradientViewTag = 88
+    @IBInspectable open var enableGradient: Bool = false {
+        didSet {
+            if enableGradient {
+                self.setGradient()
+            } else {
+                self.removeGradient()
+            }
+        }
+    }
+    @IBInspectable open var gradientStartColor: UIColor = UIColor.clear {
+        didSet {
+            self.updateGradient()
+        }
+    }
+    @IBInspectable open var gradientEndColor: UIColor = UIColor.clear {
+        didSet {
+            self.updateGradient()
+        }
+    }
+    @IBInspectable open var gradientHorizontal: Bool = true {
+        didSet {
+            self.updateGradient()
+        }
+    }
+    
+    func updateGradient(){
+        if enableGradient {
+            self.setGradient()
+        }
+    }
+    
+    func setGradient(){
+        if self.gradientSet {
+            removeGradient()
+        }
+        let gradientView = CustomGradientView()
+        gradientView.frame = self.bounds
+        gradientView.setColors([gradientStartColor.cgColor, gradientEndColor.cgColor])
+        if gradientHorizontal {
+            gradientView.setDirection(.horizontal)
+        } else {
+            gradientView.setDirection(.vertical)
+        }
+        gradientView.tag = self.gradientViewTag
+        self.insertSubview(gradientView, at: 0)
+        self.gradientSet = false
+    }
+    
+    func removeGradient(){
+        if let view = self.viewWithTag(self.gradientViewTag){
+            self.gradientSet = false
+            view.removeFromSuperview()
+        }
+    }
 }
