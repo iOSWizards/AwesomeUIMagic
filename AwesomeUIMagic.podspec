@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AwesomeUIMagic'
-  s.version          = '0.5.2'
+  s.version          = '0.5.3s'
   s.summary          = 'Unlock Magic on your UI.'
 
 # This description is used to generate tags and improve search results.
