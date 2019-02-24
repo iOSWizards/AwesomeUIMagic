@@ -150,7 +150,7 @@ open class DesignableButton: UIButton {
     
     // MARK: - Gradient
     var gradientSet = false
-    var gradientViewTag = 88
+    var gradientLayerName = "buttonGradient"
     @IBInspectable open var enableGradient: Bool = false {
         didSet {
             if enableGradient {
@@ -186,23 +186,28 @@ open class DesignableButton: UIButton {
         if self.gradientSet {
             removeGradient()
         }
-        let gradientView = CustomGradientView()
-        gradientView.frame = self.bounds
-        gradientView.setColors([gradientStartColor.cgColor, gradientEndColor.cgColor])
+        
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.colors = [gradientStartColor.cgColor, gradientEndColor.cgColor]
         if gradientHorizontal {
-            gradientView.setDirection(.horizontal)
+            gradientLayer.startPoint = CGPoint(x: 0.0, y: 0.5)
+            gradientLayer.endPoint = CGPoint(x: 1.0, y: 0.5)
         } else {
-            gradientView.setDirection(.vertical)
+            gradientLayer.startPoint = CGPoint(x: 0.5, y: 0.0)
+            gradientLayer.endPoint = CGPoint(x: 0.5, y: 1.0)
         }
-        gradientView.tag = self.gradientViewTag
-        self.insertSubview(gradientView, at: 0)
-        self.gradientSet = false
+        gradientLayer.frame = self.bounds
+        gradientLayer.name = self.gradientLayerName
+        self.layer.insertSublayer(gradientLayer, at: 0)
+        self.gradientSet = true
     }
     
     func removeGradient(){
-        if let view = self.viewWithTag(self.gradientViewTag){
-            self.gradientSet = false
-            view.removeFromSuperview()
+        guard let subLayers = self.layer.sublayers else { return }
+        for layer in subLayers {
+            if layer.name == self.gradientLayerName {
+                layer.removeFromSuperlayer()
+            }
         }
     }
 }
