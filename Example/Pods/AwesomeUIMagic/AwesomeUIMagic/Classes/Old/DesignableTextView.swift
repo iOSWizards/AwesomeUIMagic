@@ -15,7 +15,7 @@ open class DesignableTextView: UITextView {
         static let defaultiOSPlaceholderColor = UIColor(red: 0.0, green: 0.0, blue: 0.0980392, alpha: 0.22)
     }
     
-    open let placeholderLabel: UILabel = UILabel()
+    public let placeholderLabel: UILabel = UILabel()
     
     private var placeholderLabelConstraints = [NSLayoutConstraint]()
     

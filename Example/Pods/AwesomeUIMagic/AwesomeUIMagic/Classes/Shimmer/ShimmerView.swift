@@ -9,7 +9,7 @@
 import UIKit
 
 class ShimmerView: UIView, ShimmerEffect {
-    override open static var layerClass: AnyClass {
+    override public static var layerClass: AnyClass {
         return CAGradientLayer.self
     }
     
