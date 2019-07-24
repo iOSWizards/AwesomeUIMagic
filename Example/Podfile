@@ -3,5 +3,5 @@ platform :ios, '10'
 use_frameworks!
 
 target 'AwesomeUIMagic_Example' do
-  pod 'AwesomeUIMagic'
+  pod 'AwesomeUIMagic', :path => '../'
 end

@@ -1,16 +1,16 @@
 PODS:
-  - AwesomeUIMagic (0.2.8)
+  - AwesomeUIMagic (0.5.3)
 
 DEPENDENCIES:
-  - AwesomeUIMagic
+  - AwesomeUIMagic (from `../`)
 
-SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
-    - AwesomeUIMagic
+EXTERNAL SOURCES:
+  AwesomeUIMagic:
+    :path: "../"
 
 SPEC CHECKSUMS:
-  AwesomeUIMagic: 07e7f08e21d36b451dc335ea7fc15654d666cfe6
+  AwesomeUIMagic: 394b601f49be87cb0797670bdf3d21f1b80b5ca0
 
-PODFILE CHECKSUM: 2dcc254c2831fad21adbec159825b60525eed07e
+PODFILE CHECKSUM: 880438a1851be9aaeb244cfb83da0c9e455c6fd0
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.7.2
