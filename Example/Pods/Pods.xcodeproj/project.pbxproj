@@ -111,7 +111,7 @@
 				F62367091E1AF4CC26F757CF0641EE46 /* Formatting */,
 				EE88D1A046C2BFCDCE91ABBCA35D636B /* Gradient */,
 				265E2792117C1D41A583CDADDC3E413D /* Layer */,
-				6EFD190AFB4D18D56F5656FA85147A78 /* Old */,
+				6EFD190AFB4D18D56F5656FA85147A78 /* Custom */,
 				48675140E1C010B481A0AD77E5745EBA /* Pod */,
 				76DFD75EF404CFCF504DA47BEEB98C30 /* Shadow */,
 				B730754EF2BDC511F1005FD5659003F9 /* Support Files */,
@@ -165,7 +165,7 @@
 			path = "Target Support Files/Pods-AwesomeUIMagic_Example";
 			sourceTree = "<group>";
 		};
-		6EFD190AFB4D18D56F5656FA85147A78 /* Old */ = {
+		6EFD190AFB4D18D56F5656FA85147A78 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
 				D99734BBEEEFDC470124B90E11CAC839 /* DesignableButton.swift */,
@@ -177,8 +177,8 @@
 				5534E0F4B898BA1BC25DC2FAA3302C9F /* UIViewControllerExtensions.swift */,
 				34767B2040B6C92845936620D3CFBA68 /* UIViewExtensions.swift */,
 			);
-			name = Old;
-			path = AwesomeUIMagic/Classes/Old;
+			name = Custom;
+			path = AwesomeUIMagic/Classes/Custom;
 			sourceTree = "<group>";
 		};
 		76DFD75EF404CFCF504DA47BEEB98C30 /* Shadow */ = {
