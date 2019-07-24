@@ -148,4 +148,67 @@ open class DesignableButton: UIButton {
         }
     }
     
+    // MARK: - Gradient
+    var gradientSet = false
+    var gradientLayerName = "buttonGradient"
+    @IBInspectable open var enableGradient: Bool = false {
+        didSet {
+            if enableGradient {
+                self.setGradient()
+            } else {
+                self.removeGradient()
+            }
+        }
+    }
+    @IBInspectable open var gradientStartColor: UIColor = UIColor.clear {
+        didSet {
+            self.updateGradient()
+        }
+    }
+    @IBInspectable open var gradientEndColor: UIColor = UIColor.clear {
+        didSet {
+            self.updateGradient()
+        }
+    }
+    @IBInspectable open var gradientHorizontal: Bool = true {
+        didSet {
+            self.updateGradient()
+        }
+    }
+    
+    func updateGradient(){
+        if enableGradient {
+            self.setGradient()
+        }
+    }
+    
+    func setGradient(){
+        if self.gradientSet {
+            removeGradient()
+        }
+        
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.colors = [gradientStartColor.cgColor, gradientEndColor.cgColor]
+        if gradientHorizontal {
+            gradientLayer.startPoint = CGPoint(x: 0.0, y: 0.5)
+            gradientLayer.endPoint = CGPoint(x: 1.0, y: 0.5)
+        } else {
+            gradientLayer.startPoint = CGPoint(x: 0.5, y: 0.0)
+            gradientLayer.endPoint = CGPoint(x: 0.5, y: 1.0)
+        }
+        gradientLayer.frame = self.bounds
+        gradientLayer.name = self.gradientLayerName
+        self.layer.insertSublayer(gradientLayer, at: 0)
+        self.gradientSet = true
+    }
+    
+    func removeGradient(){
+        guard let subLayers = self.layer.sublayers else { return }
+        for layer in subLayers {
+            if layer.name == self.gradientLayerName {
+                layer.removeFromSuperlayer()
+            }
+        }
+    }
+    
 }
