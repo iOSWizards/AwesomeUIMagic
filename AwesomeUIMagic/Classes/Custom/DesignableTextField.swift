@@ -34,5 +34,10 @@ open class DesignableTextField: UITextField {
         }
     }
     
-    
+    /// Set the font for the textfield Placeholdet
+    /// - Parameter font: the font that needs to be set
+    open func setPlaceHolderFont(font: UIFont?){
+        guard let placeholder = placeholder, let font = font else { return }
+        self.attributedPlaceholder =  NSAttributedString(string: placeholder, attributes: [.font: font])
+    }
 }
