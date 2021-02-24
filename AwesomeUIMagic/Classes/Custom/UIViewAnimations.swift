@@ -112,6 +112,22 @@ extension UIView{
         })
     }
     
+    public func animateFadeInRightToLeft(duration: Double = 0.75, alphaIn: CGFloat = 0, damping: CGFloat = 0.98, _ completion:(() -> Void)? = nil){
+           self.alpha = alphaIn
+
+           let center = CGRect(x: self.superview!.frame.origin.x, y: self.superview!.frame.size.height-self.frame.size.height, width: self.frame.width, height: self.frame.height)
+           self.frame = CGRect(x: self.superview!.frame.origin.x+self.frame.width, y: self.superview!.frame.size.height-self.frame.size.height, width: self.frame.width, height: self.frame.height)
+
+           UIView.animate(withDuration: duration, delay: 0, usingSpringWithDamping: damping, initialSpringVelocity: 0.4, options: .curveLinear, animations: {
+               self.frame = center
+               self.alpha = 1
+           }, completion: { (didComplete) in
+               //if didComplete {
+               completion?()
+               //}
+           })
+       }
+    
     public func animateFadeOut(duration: Double = 0.3, _ completion:(() -> Void)? = nil){
         UIView.animate(withDuration: duration, animations: {
             self.alpha = 0
